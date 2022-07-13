@@ -1,0 +1,67 @@
+@import "color";
+@import "reset";
+@import "general";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400&display=swap');
+
+body {
+  header {
+    width: 100%;
+    min-height: 95px;
+    background-color: white;
+
+    .content {
+      margin-top: 39px;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        width: 113px;
+        height: 36px;
+        margin-right: 102px;
+
+      }
+
+
+      .menu {
+        display: flex;
+        align-items: center;
+        margin-right: 102px;
+
+        ul {
+          display: flex;
+
+          li {
+            align-items: center;
+            margin-right: 24px;
+
+            a {
+              font-family: 'Montserrat';
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: $tundora-black;
+              text-decoration: none;
+
+              &:hover {
+                color: $mine_shaft;
+              }
+              &:active {
+                color: $tango;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        margin-right: 24px;
+      }
+
+
+
+
+    }
+
+  }
+}
