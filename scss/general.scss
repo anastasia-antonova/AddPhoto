@@ -31,7 +31,7 @@
   padding: 22px 50px;
   flex-direction: row;
   align-items: center;
-  border: 1px solid $gothic;
+  border: 1px solid white;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -45,17 +45,17 @@
   margin: auto;
 
   &:hover {
-    background-color: $gothic;
-    color: $white;
+    background-color: black;
+    color: black;
   }
 }
 
 .buttons3 {
-  background-color: $white;
+  background-color: white;
   padding: 19px 65px;
   flex-direction: row;
   align-items: center;
-  border: 1px solid $black;
+  border: 1px solid black;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -63,17 +63,17 @@
   line-height: 138.9%;
   text-align: center;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   cursor: pointer;
   margin-right: 10px;
 }
 
 .page-number {
-  background-color: $white;
+  background-color: white;
   padding: 8.5px 16.5px;
   flex-direction: row;
   align-items: center;
-  border: 1px solid $black;
+  border: 1px solid black;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
@@ -81,7 +81,7 @@
   line-height: 138.9%;
   text-align: center;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   cursor: pointer;
 }
 
@@ -92,7 +92,7 @@
   font-size: 55px;
   line-height: 110%;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   margin-top: 145px;
   margin-bottom: 45px;
   max-width: 585px;
@@ -105,7 +105,7 @@
   font-size: 40px;
   line-height: 110%;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   margin-bottom: 92px;
 }
 
@@ -126,7 +126,7 @@
   font-size: 25px;
   line-height: 140%;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   margin-bottom: 46px;
 }
 
@@ -137,7 +137,7 @@
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
-  color: $black;
+  color: black;
   margin-bottom: 24px;
 }
 
