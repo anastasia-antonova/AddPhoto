@@ -47,6 +47,7 @@ body {
               &:hover {
                 color: $mine_shaft;
               }
+
               &:active {
                 color: $tango;
               }
@@ -63,6 +64,7 @@ body {
     }
 
   }
+
   .banner {
     background-color: $tundora;
     min-height: 850px;
@@ -81,10 +83,126 @@ body {
           letter-spacing: 0.2px;
         }
       }
+
       button {
         margin-top: 32px;
         max-width: 370px;
       }
     }
   }
+
+  .slader-our-work {
+    margin-bottom: 60px;
+
+    h3 {
+      max-width: 1440px;
+      text-align: center;
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
+
+    .slaider-group {
+      position: relative;
+
+      > button {
+        width: 73px;
+        height: 73px;
+        background-color: $white;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 299px;
+
+        &.right-button {
+          right: 22%;
+          background-image: url("../image/our-works/right.svg");
+
+          &:hover {
+            background-image: url("../image/our-works/right-white.svg");
+          }
+        }
+
+        &.left-button {
+          left: 22%;
+          background-image: url("../image/our-works/left.svg");
+
+          &:hover {
+            background-image: url("../image/our-works/left-white.svg");
+          }
+        }
+
+        &:hover {
+          background-color: $tango;
+
+        }
+
+      }
+
+      .slider-bottom-controls {
+        max-width: 10%;
+        margin: auto;
+        margin-top: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          width: 6px;
+          height: 6px;
+          background-color: $silver_chalice;
+          border: none;
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 7px;
+          margin-left: 7px;
+          cursor: pointer;
+
+          &.active-controls {
+            width: 12px;
+            height: 12px;
+            background-color: #E97522;
+          }
+
+        }
+
+      }
+
+    }
+
+    .images {
+      display: flex;
+      overflow: hidden;
+
+
+      img {
+        &.active {
+          width: 40%;
+          height: 618px;
+          z-index: 1;
+
+          &-left {
+            width: calc(30% + 18px);
+            height: 514px;
+            margin-top: 53px;
+            margin-right: -18px;
+
+          }
+
+          &-right {
+            width: calc(30% + 18px);
+            height: 514px;
+            margin-top: 53px;
+            margin-left: -18px;
+          }
+        }
+      }
+    }
+
+  }
+
 }
+
+

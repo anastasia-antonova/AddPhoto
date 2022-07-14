@@ -145,6 +145,17 @@ table {
   margin-top: 52px;
 }
 
+.title-h3 {
+  max-width: 748px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: #333333;
+  margin-top: 52px;
+}
+
 .p-text-header {
   font-family: "Montserrat";
   font-style: normal;
@@ -233,6 +244,92 @@ body .banner .content-banner h1 span {
 body .banner .content-banner button {
   margin-top: 32px;
   max-width: 370px;
+}
+body .slader-our-work {
+  margin-bottom: 60px;
+}
+body .slader-our-work h3 {
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+body .slader-our-work .slaider-group {
+  position: relative;
+}
+body .slader-our-work .slaider-group > button {
+  width: 73px;
+  height: 73px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 299px;
+}
+body .slader-our-work .slaider-group > button.right-button {
+  right: 22%;
+  background-image: url("../image/our-works/right.svg");
+}
+body .slader-our-work .slaider-group > button.right-button:hover {
+  background-image: url("../image/our-works/right-white.svg");
+}
+body .slader-our-work .slaider-group > button.left-button {
+  left: 22%;
+  background-image: url("../image/our-works/left.svg");
+}
+body .slader-our-work .slaider-group > button.left-button:hover {
+  background-image: url("../image/our-works/left-white.svg");
+}
+body .slader-our-work .slaider-group > button:hover {
+  background-color: #E97522;
+}
+body .slader-our-work .slaider-group .slider-bottom-controls {
+  max-width: 10%;
+  margin: auto;
+  margin-top: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .slader-our-work .slaider-group .slider-bottom-controls button {
+  width: 6px;
+  height: 6px;
+  background-color: #B1B1B1;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 7px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+body .slader-our-work .slaider-group .slider-bottom-controls button.active-controls {
+  width: 12px;
+  height: 12px;
+  background-color: #E97522;
+}
+body .slader-our-work .images {
+  display: flex;
+  overflow: hidden;
+}
+body .slader-our-work .images img.active {
+  width: 40%;
+  height: 618px;
+  z-index: 1;
+}
+body .slader-our-work .images img.active-left {
+  width: calc(30% + 18px);
+  height: 514px;
+  margin-top: 53px;
+  margin-right: -18px;
+}
+body .slader-our-work .images img.active-right {
+  width: calc(30% + 18px);
+  height: 514px;
+  margin-top: 53px;
+  margin-left: -18px;
 }
 
 /*# sourceMappingURL=home.css.map */
