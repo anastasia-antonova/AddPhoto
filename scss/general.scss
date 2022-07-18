@@ -126,10 +126,26 @@
 
 }
 
-
-
 a{
   text-decoration: none;
+}
+
+.right-button {
+  right: 22%;
+  background-image: url("../image/our-works/right.svg");
+
+  &:hover {
+    background-image: url("../image/our-works/right-white.svg");
+  }
+}
+
+.left-button {
+  left: 22%;
+  background-image: url("../image/our-works/left.svg");
+
+  &:hover {
+    background-image: url("../image/our-works/left-white.svg");
+  }
 }
 
 

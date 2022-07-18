@@ -203,6 +203,64 @@ body {
 
   }
 
+  .our-location {
+    h3 {
+      max-width: 1440px;
+      text-align: center;
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
+    .slaider-group {
+      position: relative;
+      button {
+        width: 73px;
+        height: 73px;
+        background-color: $white;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 128px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+          background-color: $tango;
+        }
+
+        &.right-button {
+          right: -3%;
+        }
+
+        &.left-button {
+          left: -3%;
+        }
+      }
+      .images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+
+        img {
+          width: 33%;
+          height: 349px;
+          border-radius: 15px;
+          &:nth-child(2) {
+            margin: 0 26px;
+          }
+        }
+      }
+    }
+    .buttons2 {
+      display: block;
+      margin: auto;
+      padding: 14px 54px;
+      margin-bottom: 80px;
+    }
+
+  }
+
 }
 
 
