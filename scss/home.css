@@ -57,7 +57,7 @@ table {
 
 /* other color*/
 .basic {
-  max-width: 1250px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -154,6 +154,19 @@ table {
   line-height: 120%;
   color: #333333;
   margin-top: 52px;
+}
+
+.title-h3-margin {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: #333333;
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .p-text-header {
@@ -264,12 +277,6 @@ body .banner .content-banner button {
 body .slader-our-work {
   margin-bottom: 60px;
 }
-body .slader-our-work h3 {
-  max-width: 1440px;
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
 body .slader-our-work .slaider-group {
   position: relative;
 }
@@ -353,12 +360,6 @@ body .our-location {
   background-size: cover;
   background-position-y: -21px;
 }
-body .our-location h3 {
-  max-width: 1440px;
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
 body .our-location .slaider-group {
   position: relative;
 }
@@ -403,14 +404,84 @@ body .our-location .buttons2 {
   padding: 14px 54px;
   margin-bottom: 80px;
 }
-body .video h3 {
-  max-width: 1440px;
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
 body .video iframe {
   margin-bottom: 80px;
+}
+body .grid .grid-body {
+  display: grid;
+  grid-template: repeat(5, 335px)/repeat(3, 33%);
+  margin: 0 -13px;
+}
+body .grid .grid-item {
+  margin: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+body .grid .grid-item::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
+  background-size: cover;
+  border-radius: 15px;
+}
+body .grid .grid-item p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  z-index: 2;
+}
+body .grid .grid-item.row_span_2 {
+  grid-row-start: span 2;
+}
+body .grid .grid-item.column_span_2 {
+  grid-column-start: span 2;
+}
+body .grid .grid-item:nth-child(9), body .grid .grid-item:nth-child(10), body .grid .grid-item:nth-child(11) {
+  margin-bottom: 0;
+}
+body .grid .grid-item.grid-item-1 {
+  background-image: url("../image/grid/photo1.png");
+}
+body .grid .grid-item.grid-item-2 {
+  background-image: url("../image/grid/photo2.png");
+}
+body .grid .grid-item.grid-item-3 {
+  background-image: url("../image/grid/photo3.png");
+}
+body .grid .grid-item.grid-item-4 {
+  background-image: url("../image/grid/photo4.png");
+}
+body .grid .grid-item.grid-item-5 {
+  background-image: url("../image/grid/photo5.png");
+}
+body .grid .grid-item.grid-item-6 {
+  background-image: url("../image/grid/photo6.png");
+}
+body .grid .grid-item.grid-item-7 {
+  background-image: url("../image/grid/photo7.png");
+}
+body .grid .grid-item.grid-item-8 {
+  background-image: url("../image/grid/photo8.png");
+}
+body .grid .grid-item.grid-item-9 {
+  background-image: url("../image/grid/photo9.png");
+}
+body .grid .grid-item.grid-item-10 {
+  background-image: url("../image/grid/photo10.png");
+}
+body .grid .grid-item.grid-item-11 {
+  background-image: url("../image/grid/photo11.png");
 }
 
 /*# sourceMappingURL=home.css.map */
