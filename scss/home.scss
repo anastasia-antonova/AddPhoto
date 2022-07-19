@@ -95,40 +95,15 @@ body {
       position: relative;
 
       > button {
-        width: 73px;
-        height: 73px;
-        background-color: $white;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-position: center;
         top: 299px;
 
-        &.right-button {
+        &.right {
           right: 22%;
-          background-image: url("../image/our-works/right.svg");
-
-          &:hover {
-            background-image: url("../image/our-works/right-white.svg");
-          }
         }
 
-        &.left-button {
+        &.left {
           left: 22%;
-          background-image: url("../image/our-works/left.svg");
-
-          &:hover {
-            background-image: url("../image/our-works/left-white.svg");
-          }
         }
-
-        &:hover {
-          background-color: $tango;
-
-        }
-
       }
 
       .slider-bottom-controls {
@@ -195,31 +170,19 @@ body {
     background-position-y: -21px;
     .slaider-group {
       position: relative;
-      button {
-        width: 73px;
-        height: 73px;
-        background-color: $white;
-        border: none;
-        border-radius: 50%;
-        position: absolute;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-position: center;
+
+      > button {
         top: 128px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 
-        &:hover {
-          background-color: $tango;
-        }
-
-        &.right-button {
+        &.right {
           right: -3%;
         }
 
-        &.left-button {
+        &.left {
           left: -3%;
         }
       }
+
       .images {
         display: flex;
         justify-content: space-between;
