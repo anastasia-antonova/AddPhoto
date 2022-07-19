@@ -180,6 +180,22 @@ a {
   text-decoration: none;
 }
 
+.right-button {
+  right: 22%;
+  background-image: url("../image/our-works/right.svg");
+}
+.right-button:hover {
+  background-image: url("../image/our-works/right-white.svg");
+}
+
+.left-button {
+  left: 22%;
+  background-image: url("../image/our-works/left.svg");
+}
+.left-button:hover {
+  background-image: url("../image/our-works/left-white.svg");
+}
+
 body header {
   width: 100%;
   height: 80px;
@@ -330,6 +346,62 @@ body .slader-our-work .images img.active-right {
   height: 514px;
   margin-top: 53px;
   margin-left: -18px;
+}
+body .our-location {
+  background-image: url("../image/our-location/Line.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -21px;
+}
+body .our-location h3 {
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+body .our-location .slaider-group {
+  position: relative;
+}
+body .our-location .slaider-group button {
+  width: 73px;
+  height: 73px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 128px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+body .our-location .slaider-group button:hover {
+  background-color: #E97522;
+}
+body .our-location .slaider-group button.right-button {
+  right: -3%;
+}
+body .our-location .slaider-group button.left-button {
+  left: -3%;
+}
+body .our-location .slaider-group .images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+body .our-location .slaider-group .images img {
+  width: 33%;
+  height: 349px;
+  border-radius: 15px;
+}
+body .our-location .slaider-group .images img:nth-child(2) {
+  margin: 0 26px;
+}
+body .our-location .buttons2 {
+  display: block;
+  margin: auto;
+  padding: 14px 54px;
+  margin-bottom: 80px;
 }
 
 /*# sourceMappingURL=home.css.map */
