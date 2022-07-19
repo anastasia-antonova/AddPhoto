@@ -60,11 +60,8 @@ body {
         margin-right: 24px;
       }
 
-
     }
-
   }
-
   .banner {
     background-color: $tundora;
     min-height: 850px;
@@ -165,17 +162,13 @@ body {
             height: 12px;
             background-color: #E97522;
           }
-
         }
-
       }
-
     }
 
     .images {
       display: flex;
       overflow: hidden;
-
 
       img {
         &.active {
@@ -200,7 +193,6 @@ body {
         }
       }
     }
-
   }
 
   .our-location {
@@ -262,9 +254,18 @@ body {
       padding: 14px 54px;
       margin-bottom: 80px;
     }
-
   }
-
+  .video {
+    h3 {
+      max-width: 1440px;
+      text-align: center;
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
+    iframe {
+      margin-bottom: 80px;
+    }
+  }
 }
 
 

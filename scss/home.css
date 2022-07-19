@@ -403,5 +403,14 @@ body .our-location .buttons2 {
   padding: 14px 54px;
   margin-bottom: 80px;
 }
+body .video h3 {
+  max-width: 1440px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+body .video iframe {
+  margin-bottom: 80px;
+}
 
 /*# sourceMappingURL=home.css.map */
