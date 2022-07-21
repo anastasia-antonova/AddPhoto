@@ -539,7 +539,7 @@ body .stages .content-stages .box-stage:nth-child(3) {
   left: 180px;
 }
 body .stages .content-stages .box-stage:nth-child(3):after {
-  content: "3";
+  content: "4";
   top: 164px;
   left: -24px;
 }
@@ -548,7 +548,7 @@ body .stages .content-stages .box-stage:nth-child(4) {
   left: 907px;
 }
 body .stages .content-stages .box-stage:nth-child(4):after {
-  content: "4";
+  content: "3";
   top: 164px;
   left: -24px;
 }
