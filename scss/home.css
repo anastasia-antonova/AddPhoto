@@ -479,5 +479,107 @@ body .grid .grid-item.grid-item-10 {
 body .grid .grid-item.grid-item-11 {
   background-image: url("../image/grid/photo11.png");
 }
+body .stages {
+  min-height: 1212px;
+}
+body .stages .content-stages {
+  min-height: 1065px;
+  background-image: url("../image/stages/Line4.svg");
+  background-size: 1065px;
+  background-repeat: no-repeat;
+  background-position-y: 100px;
+  background-position-x: 172px;
+  position: relative;
+}
+body .stages .content-stages .box-stage {
+  width: 348px;
+  min-height: 190px;
+  border: 2px solid #E97522;
+  border-radius: 12px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+body .stages .content-stages .box-stage:after {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F9F4EE;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E97522;
+}
+body .stages .content-stages .box-stage:first-child {
+  top: 28px;
+}
+body .stages .content-stages .box-stage:first-child:after {
+  content: "1";
+  top: 164px;
+  left: -24px;
+}
+body .stages .content-stages .box-stage:nth-child(2) {
+  top: 77px;
+  left: 652px;
+}
+body .stages .content-stages .box-stage:nth-child(2):after {
+  content: "2";
+  top: 164px;
+  left: -24px;
+}
+body .stages .content-stages .box-stage:nth-child(3) {
+  top: 388px;
+  left: 180px;
+}
+body .stages .content-stages .box-stage:nth-child(3):after {
+  content: "3";
+  top: 164px;
+  left: -24px;
+}
+body .stages .content-stages .box-stage:nth-child(4) {
+  top: 388px;
+  left: 907px;
+}
+body .stages .content-stages .box-stage:nth-child(4):after {
+  content: "4";
+  top: 164px;
+  left: -24px;
+}
+body .stages .content-stages .box-stage:last-child {
+  top: 655px;
+  left: 566px;
+}
+body .stages .content-stages .box-stage:last-child:after {
+  content: "5";
+  top: 164px;
+  left: -24px;
+}
+body .stages .content-stages .box-stage .box-text {
+  margin-left: 40px;
+}
+body .stages .content-stages .box-stage .box-text .title-box-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 12px;
+  color: #333333;
+}
+body .stages .content-stages .box-stage .box-text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4A4A4A;
+}
 
 /*# sourceMappingURL=home.css.map */

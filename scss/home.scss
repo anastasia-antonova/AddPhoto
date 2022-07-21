@@ -213,7 +213,7 @@ body {
     }
   }
 
-.grid {
+  .grid {
   .grid-body {
     display: grid;
     grid-template: repeat(5, 335px) / repeat(3, 33%);
@@ -308,6 +308,141 @@ body {
     }
   }
 }
+
+  .stages {
+    min-height: 1212px;
+
+    .content-stages {
+      min-height: 1065px;
+      background-image: url("../image/stages/Line4.svg");
+      background-size: 1065px;
+      background-repeat: no-repeat;
+      background-position-y: 100px;
+      background-position-x: 172px;
+      position: relative;
+
+
+
+      .box-stage {
+        width: 348px;
+        min-height: 190px;
+        border: 2px solid $tango;
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+
+        &:after {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #F9F4EE;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 37px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $tango;
+
+        }
+
+        &:first-child {
+          top: 28px;
+
+          &:after {
+            content: '1';
+            top: 164px;
+            left: -24px;
+
+          }
+        }
+
+        &:nth-child(2) {
+          top: 77px;
+          left: 652px;
+
+
+          &:after {
+            content: '2';
+            top: 164px;
+            left: -24px;
+
+
+          }
+        }
+        &:nth-child(3) {
+          top: 388px;
+          left: 180px;
+
+          &:after {
+            content: '3';
+            top: 164px;
+            left: -24px;
+
+
+          }
+        }
+
+        &:nth-child(4) {
+          top: 388px;
+          left: 907px;
+
+          &:after {
+            content: '4';
+            top: 164px;
+            left: -24px;
+
+
+          }
+        }
+
+        &:last-child {
+          top: 655px;
+          left: 566px;
+
+          &:after {
+            content: '5';
+            top: 164px;
+            left: -24px;
+
+
+          }
+        }
+
+
+
+        .box-text{
+          margin-left: 40px;
+
+          .title-box-text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            margin-bottom: 12px;
+            color: $mine_shaft;
+          }
+
+          p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: $tundora-black;
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 
