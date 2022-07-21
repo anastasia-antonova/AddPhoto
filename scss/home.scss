@@ -322,7 +322,6 @@ body {
       position: relative;
 
 
-
       .box-stage {
         width: 348px;
         min-height: 190px;
@@ -361,7 +360,6 @@ body {
 
           }
         }
-
         &:nth-child(2) {
           top: 77px;
           left: 652px;
@@ -387,7 +385,6 @@ body {
 
           }
         }
-
         &:nth-child(4) {
           top: 388px;
           left: 907px;
@@ -400,7 +397,6 @@ body {
 
           }
         }
-
         &:last-child {
           top: 655px;
           left: 566px;
@@ -413,8 +409,6 @@ body {
 
           }
         }
-
-
 
         .box-text{
           margin-left: 40px;
@@ -441,6 +435,27 @@ body {
         }
 
       }
+    }
+  }
+
+  .text-block1 {
+    background-color: $black_haze;
+    padding-top: 60px;
+
+    h3 {
+      margin-top: 0;
+    }
+
+
+    p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: $tundora-black;
+      margin-left: 100px;
+      margin-bottom: 20px;
     }
   }
 }

@@ -581,5 +581,22 @@ body .stages .content-stages .box-stage .box-text p {
   line-height: 140%;
   color: #4A4A4A;
 }
+body .text-block1 {
+  background-color: #F2F4F4;
+  padding-top: 60px;
+}
+body .text-block1 h3 {
+  margin-top: 0;
+}
+body .text-block1 p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4A4A4A;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
 
 /*# sourceMappingURL=home.css.map */
