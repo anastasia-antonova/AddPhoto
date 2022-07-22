@@ -444,6 +444,29 @@ body {
     padding-bottom: 46px;
     padding-right: 100px;
 
+    &.my-class {
+      .hide-text {
+        display: block;
+      }
+
+      .show-more-text {
+        display: none;
+      }
+
+      p{
+        &.toggle {
+          display: block;
+        }
+
+        &.hidden {
+          white-space: initial;
+          overflow: auto;
+          max-width: inherit;
+          text-overflow: inherit;
+        }
+      }
+    }
+
     h3 {
       margin-top: 0;
     }
@@ -458,6 +481,21 @@ body {
       color: $tundora-black;
       margin-left: 100px;
       margin-bottom: 20px;
+
+      &.toggle {
+        display: none;
+      }
+
+      &.hidden {
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 550px;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .hide-text {
+      display: none;
     }
   }
 }
