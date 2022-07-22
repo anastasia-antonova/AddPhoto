@@ -584,6 +584,8 @@ body .stages .content-stages .box-stage .box-text p {
 body .text-block1 {
   background-color: #F2F4F4;
   padding-top: 60px;
+  padding-bottom: 46px;
+  padding-right: 100px;
 }
 body .text-block1 h3 {
   margin-top: 0;
