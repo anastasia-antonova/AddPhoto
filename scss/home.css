@@ -487,19 +487,20 @@ body .stages .content-stages {
   background-image: url("../image/stages/Line4.svg");
   background-size: 1065px;
   background-repeat: no-repeat;
-  background-position-y: 100px;
-  background-position-x: 172px;
+  background-position-y: 85px;
+  background-position-x: 153px;
   position: relative;
 }
 body .stages .content-stages .box-stage {
-  width: 348px;
-  min-height: 190px;
+  width: 344px;
+  min-height: 186px;
   border: 2px solid #E97522;
   border-radius: 12px;
   position: absolute;
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
+  box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
 }
 body .stages .content-stages .box-stage:after {
   width: 50px;
@@ -518,48 +519,52 @@ body .stages .content-stages .box-stage:after {
   color: #E97522;
 }
 body .stages .content-stages .box-stage:first-child {
-  top: 28px;
+  top: 17px;
+  left: 11px;
 }
 body .stages .content-stages .box-stage:first-child:after {
   content: "1";
-  top: 164px;
-  left: -24px;
+  top: 156px;
+  left: -17px;
 }
 body .stages .content-stages .box-stage:nth-child(2) {
-  top: 77px;
-  left: 652px;
+  top: 74px;
+  left: 632px;
 }
 body .stages .content-stages .box-stage:nth-child(2):after {
   content: "2";
-  top: 164px;
-  left: -24px;
+  top: 156px;
+  left: -19px;
 }
 body .stages .content-stages .box-stage:nth-child(3) {
-  top: 388px;
-  left: 180px;
+  top: 372px;
+  left: 174px;
 }
 body .stages .content-stages .box-stage:nth-child(3):after {
   content: "4";
-  top: 164px;
-  left: -24px;
+  top: 154px;
+  left: -20px;
 }
 body .stages .content-stages .box-stage:nth-child(4) {
-  top: 388px;
-  left: 907px;
+  top: 377px;
+  left: 882px;
+}
+body .stages .content-stages .box-stage:nth-child(4) .box-text p:last-child {
+  padding-bottom: 0;
 }
 body .stages .content-stages .box-stage:nth-child(4):after {
   content: "3";
-  top: 164px;
-  left: -24px;
+  top: 154px;
+  left: -17px;
 }
 body .stages .content-stages .box-stage:last-child {
   top: 655px;
-  left: 566px;
+  left: 538px;
 }
 body .stages .content-stages .box-stage:last-child:after {
   content: "5";
-  top: 164px;
-  left: -24px;
+  top: 154px;
+  left: -20px;
 }
 body .stages .content-stages .box-stage .box-text {
   margin-left: 40px;
@@ -581,11 +586,29 @@ body .stages .content-stages .box-stage .box-text p {
   line-height: 140%;
   color: #4A4A4A;
 }
+body .stages .content-stages .box-stage .box-text p:last-child {
+  padding-bottom: 8px;
+}
 body .text-block1 {
   background-color: #F2F4F4;
   padding-top: 60px;
   padding-bottom: 46px;
   padding-right: 100px;
+}
+body .text-block1.my-class .hide-text {
+  display: block;
+}
+body .text-block1.my-class .show-more-text {
+  display: none;
+}
+body .text-block1.my-class p.toggle {
+  display: block;
+}
+body .text-block1.my-class p.hidden {
+  white-space: initial;
+  overflow: auto;
+  max-width: inherit;
+  text-overflow: inherit;
 }
 body .text-block1 h3 {
   margin-top: 0;
@@ -599,6 +622,47 @@ body .text-block1 p {
   color: #4A4A4A;
   margin-left: 100px;
   margin-bottom: 20px;
+}
+body .text-block1 p.toggle {
+  display: none;
+}
+body .text-block1 p.hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 550px;
+  text-overflow: ellipsis;
+}
+body .text-block1 button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  color: #E97522;
+  background-color: transparent;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  padding-right: 36px;
+}
+body .text-block1 button.hide-text {
+  display: none;
+}
+body .text-block1 button.show-more-text:after {
+  transform: rotate(180deg);
+}
+body .text-block1 button:after {
+  content: "";
+  width: 23px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-image: url("../image/icons/icon-up.svg");
+  background-size: 23px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=home.css.map */
