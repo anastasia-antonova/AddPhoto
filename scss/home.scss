@@ -543,6 +543,165 @@ body {
       }
     }
   }
+
+  .price {
+    min-height: 1108px;
+    background-image: url("../image/price/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .basic {
+      padding-top: 118px;
+
+      .title-h3-margin {
+        margin-top: 0;
+      }
+
+      .container-price3 {
+        display: flex;
+
+        .container-price {
+
+          width: 33%;
+          min-height:  654px;
+          margin-right: 23px;
+          border-radius: 16px;
+
+          .padding-price {
+            padding-left: 46px;
+            padding-top: 48px;
+            display: flex;
+            flex-direction: column;
+
+            .name-price {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 120%;
+              color: $tundora-black;
+              margin-bottom: 16px;
+            }
+
+            .price-text {
+              margin-bottom: 42px;
+
+              p {
+                &:first-child {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 56px;
+                  line-height: 120%;
+                  color: $mine_shaft;
+                }
+                &:last-child {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 140%;
+                  color: $gray;
+                }
+
+              }
+
+            }
+
+            .list-price {
+              ul {
+                margin-bottom: 33.5px;
+                li {
+                  margin-left: 26px;
+                  position: relative;
+                  font-family: 'Font Awesome 5 Free';
+                  font-style: normal;
+                  font-weight: 900;
+                  font-size: 18px;
+                  line-height: 140%;
+                  color: $tundora-black;
+                  margin-bottom: 19px;
+
+                  &:before {
+                    content: "";
+                    width: 18px;
+                    height: 25px;
+                    position: absolute;
+                    left: -23px;
+                    background-image: url("../image/price/check-circle.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+
+
+                  }
+                }
+              }
+            }
+          }
+
+          >p {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 12px;
+          }
+
+          .additional-services {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 58px;
+            p {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 120%;
+              text-align: center;
+              border: 1px solid $gray;
+              background-color: $white;
+              margin-right: 5px;
+              border-radius: 5px;
+              padding: 6px;
+              cursor: pointer;
+
+              &:last-child {
+                margin-right: 0;
+              }
+
+              &:hover {
+                background-color: $wild_sand2;
+              }
+
+            }
+          }
+
+          .buttons2 {
+            display: block;
+            width: 370px;
+            margin: auto;
+            margin-bottom: 42px;
+          }
+
+          &:first-child {
+            background-color: $black_haze;
+          }
+          &:last-child {
+            margin-right: 0;
+            background-color: $sidecara;
+          }
+          &:nth-child(2){
+            background-color: $merino;
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 
