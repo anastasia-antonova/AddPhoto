@@ -213,7 +213,7 @@ body {
     }
   }
 
-.grid {
+  .grid {
   .grid-body {
     display: grid;
     grid-template: repeat(5, 335px) / repeat(3, 33%);
@@ -308,6 +308,400 @@ body {
     }
   }
 }
+
+  .stages {
+    min-height: 1212px;
+
+    .content-stages {
+      min-height: 1065px;
+      background-image: url("../image/stages/Line4.svg");
+      background-size: 1065px;
+      background-repeat: no-repeat;
+      background-position-y: 85px;
+      background-position-x: 153px;
+      position: relative;
+
+
+      .box-stage {
+        width: 344px;
+        min-height: 186px;
+        border: 2px solid #E97522;
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: #FFFFFF;
+        box-shadow: 0px 24px 38px rgb(220 220 220 / 14%), 0px 9px 46px rgb(216 216 216 / 12%), 0px 11px 15px rgb(221 221 221 / 20%);
+
+        &:after {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #F9F4EE;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 37px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $tango;
+
+        }
+
+        &:first-child {
+          top: 17px;
+          left: 11px;
+
+          &:after {
+            content: '1';
+            top: 156px;
+            left: -17px;
+
+          }
+        }
+        &:nth-child(2) {
+          top: 74px;
+          left: 632px;
+
+
+          &:after {
+            content: '2';
+            top: 156px;
+            left: -19px;
+
+
+          }
+        }
+        &:nth-child(3) {
+          top: 372px;
+          left: 174px;
+
+          &:after {
+            content: '4';
+            top: 154px;
+            left: -20px;
+
+
+          }
+        }
+        &:nth-child(4) {
+          top: 377px;
+          left: 882px;
+
+          .box-text {
+            p {
+              &:last-child  {
+                padding-bottom: 0;
+              }
+            }
+          }
+
+          &:after {
+            content: '3';
+            top: 154px;
+            left: -17px;
+
+          }
+        }
+        &:last-child {
+          top: 655px;
+          left: 538px;
+
+          &:after {
+            content: '5';
+            top: 154px;
+            left: -20px;
+
+
+          }
+        }
+
+        .box-text{
+          margin-left: 40px;
+
+          .title-box-text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            margin-bottom: 12px;
+            color: $mine_shaft;
+          }
+
+          p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: $tundora-black;
+
+            &:last-child {
+              padding-bottom: 8px;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .text-block1 {
+    background-color: $black_haze;
+    padding-top: 60px;
+    padding-bottom: 46px;
+    padding-right: 100px;
+
+    &.my-class {
+      .hide-text {
+        display: block;
+      }
+
+      .show-more-text {
+        display: none;
+      }
+
+      p{
+        &.toggle {
+          display: block;
+        }
+
+        &.hidden {
+          white-space: initial;
+          overflow: auto;
+          max-width: inherit;
+          text-overflow: inherit;
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+
+    p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: $tundora-black;
+      margin-left: 100px;
+      margin-bottom: 20px;
+
+      &.toggle {
+        display: none;
+      }
+
+      &.hidden {
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 550px;
+        text-overflow: ellipsis;
+      }
+    }
+
+    button {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      border: none;
+      color: $tango;
+      background-color: transparent;
+      float: right;
+      cursor: pointer;
+      position: relative;
+      padding-right: 36px;
+
+      &.hide-text {
+        display: none;
+      }
+
+      &.show-more-text:after {
+        transform: rotate(180deg);
+      }
+
+      &:after {
+        content: "";
+        width: 23px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background-image: url("../image/icons/icon-up.svg");
+        background-size: 23px 14px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .price {
+    min-height: 1108px;
+    background-image: url("../image/price/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .basic {
+      padding-top: 118px;
+
+      .title-h3-margin {
+        margin-top: 0;
+      }
+
+      .container-price3 {
+        display: flex;
+
+        .container-price {
+
+          width: 33%;
+          min-height:  654px;
+          margin-right: 23px;
+          border-radius: 16px;
+
+          .padding-price {
+            padding-left: 46px;
+            padding-top: 48px;
+            display: flex;
+            flex-direction: column;
+
+            .name-price {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 120%;
+              color: $tundora-black;
+              margin-bottom: 16px;
+            }
+
+            .price-text {
+              margin-bottom: 42px;
+
+              p {
+                &:first-child {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 56px;
+                  line-height: 120%;
+                  color: $mine_shaft;
+                }
+                &:last-child {
+                  font-family: 'Montserrat';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 140%;
+                  color: $gray;
+                }
+
+              }
+
+            }
+
+            .list-price {
+              ul {
+                margin-bottom: 33.5px;
+                li {
+                  margin-left: 26px;
+                  position: relative;
+                  font-family: 'Font Awesome 5 Free';
+                  font-style: normal;
+                  font-weight: 900;
+                  font-size: 18px;
+                  line-height: 140%;
+                  color: $tundora-black;
+                  margin-bottom: 19px;
+
+                  &:before {
+                    content: "";
+                    width: 18px;
+                    height: 25px;
+                    position: absolute;
+                    left: -23px;
+                    background-image: url("../image/price/check-circle.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+
+
+                  }
+                }
+              }
+            }
+          }
+
+          >p {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 12px;
+          }
+
+          .additional-services {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 58px;
+            p {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 120%;
+              text-align: center;
+              border: 1px solid $gray;
+              background-color: $white;
+              margin-right: 5px;
+              border-radius: 5px;
+              padding: 6px;
+              cursor: pointer;
+
+              &:last-child {
+                margin-right: 0;
+              }
+
+              &:hover {
+                background-color: $wild_sand2;
+              }
+
+            }
+          }
+
+          .buttons2 {
+            display: block;
+            width: 370px;
+            margin: auto;
+            margin-bottom: 42px;
+          }
+
+          &:first-child {
+            background-color: $black_haze;
+          }
+          &:last-child {
+            margin-right: 0;
+            background-color: $sidecara;
+          }
+          &:nth-child(2){
+            background-color: $merino;
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 
