@@ -549,27 +549,37 @@ body {
     background-image: url("../image/price/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 88px;
+    background-position-x: -59px;
 
     .basic {
       padding-top: 118px;
 
+
       .title-h3-margin {
         margin-top: 0;
+        margin-bottom: 80px;
       }
 
       .container-price3 {
         display: flex;
+        flex-grow: 1;
+        align-items: center;
+        margin-bottom: 161px;
 
         .container-price {
 
           width: 33%;
-          min-height:  654px;
+          min-height: 606px;
           margin-right: 23px;
           border-radius: 16px;
+          background-image: url("../image/price/Background-circle.png");
+          background-repeat: no-repeat;
+          background-position-x: 235px;
+          padding: 48px 14px 42px;
 
           .padding-price {
-            padding-left: 46px;
-            padding-top: 48px;
+            padding-left: 31px;
             display: flex;
             flex-direction: column;
 
@@ -632,8 +642,6 @@ body {
                     background-position: center;
                     background-repeat: no-repeat;
 
-
-
                   }
                 }
               }
@@ -675,15 +683,13 @@ body {
               &:hover {
                 background-color: $wild_sand2;
               }
-
             }
           }
 
           .buttons2 {
             display: block;
-            width: 370px;
+            width: 100%;
             margin: auto;
-            margin-bottom: 42px;
           }
 
           &:first-child {
@@ -696,9 +702,7 @@ body {
           &:nth-child(2){
             background-color: $merino;
           }
-
         }
-
       }
     }
   }
