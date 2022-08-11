@@ -1,12 +1,28 @@
-function showText() {
+function toggleButton() {
   const textBlock = document.getElementById('text-block1');
+  textBlock.classList.toggle("my-class");
+}
+
+function callPhone(phone) {
+  alert(phone + ' двері відчиняйте');
+}
+
+function giveTextLength(text, num, arr) {
+  console.log('asfasfas');
+  return text.length + num + arr.length;
+}
+
+giveTextLength('vhvhh', 5, [1,4,4])
+
+function showbox() {
+  const textBlock = document.getElementById('text-block2');
   textBlock.classList.add("my-class");
 
   console.log(textBlock.classList);
 }
 
-function hideText() {
-  const textBlock = document.getElementById('text-block1');
+function hidebox() {
+  const textBlock = document.getElementById('text-block2');
   textBlock.classList.remove("my-class");
 }
 

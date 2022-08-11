@@ -455,7 +455,6 @@ body {
     background-color: $black_haze;
     padding-top: 60px;
     padding-bottom: 46px;
-    padding-right: 100px;
 
     &.my-class {
       .hide-text {
@@ -492,7 +491,6 @@ body {
       font-size: 16px;
       line-height: 26px;
       color: $tundora-black;
-      margin-left: 100px;
       margin-bottom: 20px;
 
       &.toggle {
@@ -704,6 +702,328 @@ body {
           }
         }
       }
+    }
+  }
+
+  .background-text {
+    background-color: $merino;
+  }
+
+  .gift {
+
+    .basic {
+      max-width: 921px;
+      background-color: $black_haze;
+      min-height: 471px;
+      border-radius: 25px;
+      display: flex;
+      padding: 112px 199px 38px 120px;
+
+      .left-gift {
+        width: 50%;
+        min-width: 567px;
+
+
+        p{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          letter-spacing: 1px;
+          color: $silver;
+        }
+
+        h2{
+          font-size: 48px;
+          color: $tundora-black;
+          letter-spacing: 1px;
+          text-align: left;
+          line-height: 67px;
+          margin-top: 8px;
+          margin-bottom: 53px;
+        }
+
+        ul {
+
+          li {
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            position: relative;
+            color: $tundora-black;
+            margin-bottom: 26px;
+            margin-left: 40px;
+
+            &:before {
+              content: "";
+              width: 24px;
+              height: 25px;
+              position: absolute;
+              left: -40px;
+              background-image: url("../image/gift/gift-list.svg");
+              background-position: center;
+              background-repeat: no-repeat;
+
+            }
+          }
+        }
+      }
+      .right-gift {
+        width: 50%;
+        max-width: 342px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        margin-left: 12px;
+
+        &:before {
+
+          content: "";
+          width: 493px;
+          height: 493px;
+          position: absolute;
+          left: -37px;
+          top: -119px;
+          background-image: url("../image/gift/letter2.png");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .buy-right-gift {
+
+          p {font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: $mine_shaft;
+            margin-bottom: 24px;
+          }
+
+          button {
+            max-height: 38px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .reviews {
+    .three-card-reviews {
+      display: flex;
+      justify-content: center;
+      padding-left: 25px;
+      padding-right: 25px;
+      position: relative;
+
+      .left {
+        top: 306px;
+        left: 23px;
+      }
+
+      .card-reviews {
+        width: 30%;
+
+        &:first-child {
+          >img {
+            width: 233px;
+            height: 244px;
+          }
+        }
+        &:nth-child(2) {
+          margin: 0px 16px;
+
+          >img {
+            width: 236px;
+            height: 231px;
+
+          }
+        }
+        &:last-child {
+          >img {
+            width: 235px;
+            height: 222px;
+          }
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          margin-bottom: 31px;
+          margin-top: 100px;
+
+          &.photo2-reviews {
+            margin-top: 0;
+            width: 236px;
+            height: 231px;
+          }
+          &.photo3-reviews {
+            width: 236px;
+            height: 223px;
+          }
+        }
+        .text-reviews {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 24px;
+          color: $tundora-black;
+          text-align: center;
+          margin-bottom: 89px;
+
+          .p-text {
+            color: $mine_shaft;
+
+          }
+
+          >a {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $tango;
+          }
+        }
+        .buttons2 {
+          width: 100%;
+          height: 48px;
+        }
+      }
+      .right {
+        top: 303px;
+        right: 22px;
+      }
+    }
+  }
+
+  .map {
+    display: flex;
+    width: 100%;
+    min-height: 594px;
+
+    .left-map {
+      flex-grow: 1.22;
+      min-width: 716px;
+      max-height: 541px;
+      background-image: url("../image/map/left-map-background.png");
+      background-size: 861px 550px;
+      background-repeat: no-repeat;
+      border: 5px solid #F2F4F4;
+      border-radius: 25px 0 0 25px;
+      margin-top: 17px;
+      box-shadow: (0px 2.69px 6.65px rgba(121, 121, 121, 0.2));
+
+      .vizitcard {
+        background-color: #121621;
+        max-width: 541px;
+        min-height: 436px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+      }
+
+
+    }
+
+    .right-map {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 0.88;
+      max-width: 551px;
+      max-height: 594px;
+      background-color: $black_haze;
+      padding: 81px 36px;
+      border-radius: 25px;
+
+      p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: $tundora-black;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 420px;
+
+        .form-group {
+
+          input {
+            min-width: 388px;
+            max-width: 388px;
+            max-height: 48px;
+            margin-bottom: 36px;
+            border-radius: 5px;
+            border: 1px solid #DDDEE4;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            margin-top: 8px;
+            padding: 18px 16px;
+
+
+
+            &::placeholder {
+              color: #B1B1B1;
+              opacity: 0.4;
+
+            }
+
+
+
+          }
+          label {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 12px;
+            color: #121621;
+            opacity: 0.4;
+
+
+
+          }
+
+
+        }
+        .buttons2 {
+          width: 100%;
+          max-height: 48px;
+          margin-top: 16px;
+          padding: 16px 16px;
+        }
+
+      }
+
+      span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: $scorpion;
+        margin-top: 16px;
+        max-width: 479px;
+      }
+
     }
   }
 }
