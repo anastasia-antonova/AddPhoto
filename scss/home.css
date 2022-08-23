@@ -1136,6 +1136,7 @@ body footer .dawn-footer {
 }
 body footer .dawn-footer .content-dawn-footer {
   display: flex;
+  justify-content: flex-end;
   margin-top: 32px;
 }
 body footer .dawn-footer .content-dawn-footer p {
@@ -1149,40 +1150,43 @@ body footer .dawn-footer .content-dawn-footer p {
   line-height: 28px;
   color: #333333;
 }
-body footer .dawn-footer .content-dawn-footer button {
+body footer .dawn-footer .content-dawn-footer .buttons button {
   border: none;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #F2F4F4;
+  background-color: #b1b1b1;
   margin-right: 24px;
-}
-body footer .dawn-footer .content-dawn-footer button.insta-button {
-  width: 33px;
-  height: 33px;
-  background-image: url("../image/footer/INSTAGRAM_3.svg");
-}
-body footer .dawn-footer .content-dawn-footer button.insta-button:hover {
-  -webkit-mask-image: url("../image/footer/INSTAGRAM_3.svg");
-  mask-image: url("../image/footer/INSTAGRAM_3.svg");
-  -webkit-mask-size: 33px 33px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+  cursor: pointer;
 }
-body footer .dawn-footer .content-dawn-footer button.facebook-button {
+body footer .dawn-footer .content-dawn-footer .buttons button.insta-button {
+  width: 31px;
+  height: 31px;
+  mask-image: url("../image/footer/INSTAGRAM_3.svg");
+  -webkit-mask-image: url("../image/footer/INSTAGRAM_3.svg");
+}
+body footer .dawn-footer .content-dawn-footer .buttons button.facebook-button {
   width: 22px;
   height: 31px;
-  background-image: url("../image/footer/FACEBOOK_2.svg");
+  mask-image: url("../image/footer/FACEBOOK_2.svg");
+  -webkit-mask-image: url("../image/footer/FACEBOOK_2.svg");
 }
-body footer .dawn-footer .content-dawn-footer button.twitter-button {
+body footer .dawn-footer .content-dawn-footer .buttons button.twitter-button {
   width: 31px;
   height: 28px;
-  background-image: url("../image/footer/TWITTER_3.svg");
+  mask-image: url("../image/footer/TWITTER_3.svg");
+  -webkit-mask-image: url("../image/footer/TWITTER_3.svg");
 }
-body footer .dawn-footer .content-dawn-footer button.telegram-button {
+body footer .dawn-footer .content-dawn-footer .buttons button.telegram-button {
   width: 33px;
   height: 26px;
-  background-image: url("../image/footer/TELEGRAM_2.svg");
   margin-right: 0;
+  mask-image: url("../image/footer/TELEGRAM_2.svg");
+  -webkit-mask-image: url("../image/footer/TELEGRAM_2.svg");
+}
+body footer .dawn-footer .content-dawn-footer .buttons button:hover {
+  background-color: #E97522;
 }
 
 /*# sourceMappingURL=home.css.map */

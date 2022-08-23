@@ -1107,6 +1107,7 @@ body {
 
       .content-dawn-footer {
         display: flex;
+        justify-content: flex-end;
         margin-top: 32px;
 
         p {
@@ -1121,49 +1122,52 @@ body {
           color: $mine_shaft;
 
         }
-        button {
-          border: none;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-color: $black_haze;
-          margin-right: 24px;
+        .buttons{
+          button {
+            border: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #b1b1b1;
+            margin-right: 24px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            cursor: pointer;
 
-          &.insta-button {
-            width: 33px;
-            height: 33px;
-            background-image: url("../image/footer/INSTAGRAM_3.svg");
-
-            &:hover {
-              -webkit-mask-image: url('../image/footer/INSTAGRAM_3.svg');
+            &.insta-button {
+              width: 31px;
+              height: 31px;
               mask-image: url('../image/footer/INSTAGRAM_3.svg');
-              -webkit-mask-size: 33px 33px;
-              -webkit-mask-repeat: no-repeat;
-              -webkit-mask-position: center;
+              -webkit-mask-image: url('../image/footer/INSTAGRAM_3.svg');
 
             }
+            &.facebook-button {
+              width: 22px;
+              height: 31px;
+              mask-image: url('../image/footer/FACEBOOK_2.svg');
+              -webkit-mask-image: url('../image/footer/FACEBOOK_2.svg');
 
-          }
-          &.facebook-button {
-            width: 22px;
-            height: 31px;
-            background-image: url("../image/footer/FACEBOOK_2.svg");
-          }
-          &.twitter-button {
-            width: 31px;
-            height: 28px;
-            background-image: url("../image/footer/TWITTER_3.svg");
-          }
-          &.telegram-button {
-            width: 33px;
-            height: 26px;
-            background-image: url("../image/footer/TELEGRAM_2.svg");
-            margin-right: 0;
+            }
+            &.twitter-button {
+              width: 31px;
+              height: 28px;
+              mask-image: url('../image/footer/TWITTER_3.svg');
+              -webkit-mask-image: url('../image/footer/TWITTER_3.svg');
+
+            }
+            &.telegram-button {
+              width: 33px;
+              height: 26px;
+              margin-right: 0;
+              mask-image: url('../image/footer/TELEGRAM_2.svg');
+              -webkit-mask-image: url('../image/footer/TELEGRAM_2.svg');
+            }
+
+            &:hover {
+              background-color: #E97522;
+            }
           }
         }
       }
-
-
-
     }
   }
 }
