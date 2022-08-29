@@ -1063,6 +1063,9 @@ body .map .right-map form .form-group input::placeholder {
   color: #B1B1B1;
   opacity: 0.4;
 }
+body .map .right-map form .form-group input:invalid {
+  border: 2px solid #9f0f0b;
+}
 body .map .right-map form .form-group label {
   font-family: "Montserrat";
   font-style: normal;

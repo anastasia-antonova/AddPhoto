@@ -12,19 +12,19 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href="">Портфолио</a>
+                    <a href="#" class="button-portfolio" onclick="scrollToSome('.scroll-portfolio')">Портфолио</a>
                 </li>
                 <li>
-                    <a href="">Виды работ</a>
+                    <a href="#" onclick="scrollToSome('.scroll-work-types')">Виды работ</a>
                 </li>
                 <li>
-                    <a href="">О фотостудии</a>
+                    <a href="#" onclick="scrollToSome('.scroll-about-us')">О фотостудии</a>
                 </li>
                 <li>
-                    <a href="">Услуги и цены</a>
+                    <a href="#" onclick="scrollToSome('.scroll-price')">Услуги и цены</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a href="#" onclick="scrollToSome('.scroll-contact')">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +48,7 @@
         <button class="buttons2">Получить консультацию</button>
     </div>
 </section>
-<section class="slader-our-work">
+<section class="slader-our-work scroll-portfolio" id="box1">
     <h3 class="title-h3-margin">Наши работы</h3>
     <div class="slaider-group">
         <button class="btn-icon left rotate">
@@ -94,7 +94,7 @@
     <h3 class="title-h3-margin">Оформление фотостудии</h3>
     <iframe width="100%" height="675" src="https://www.youtube.com/embed/h9cb1P7oxGU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 </section>
-<section class="grid basic">
+<section class="grid basic scroll-work-types">
     <h3 class="title-h3-margin">Виды услуг</h3>
 <div class="grid-box">
     <div class="grid-body">
@@ -155,7 +155,7 @@
         </div>
     </div>
 </section>
-<section class="text-block1" id="text-block1">
+<section class="text-block1 scroll-about-us" id="text-block1">
     <div class="basic">
         <h3 class="title-h3-margin">Фотостудия для любых идейных фотоссесий</h3>
         <p>Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один
@@ -211,7 +211,7 @@
         <button onclick="toggleButton()" class="hide-text">Скрыть</button>
     </div>
 </section>
-<section class="price">
+<section class="price scroll-price">
     <div class="basic">
         <h3 class="title-h3-margin">Стоимость фотосесии</h3>
         <div class="container-price3">
@@ -412,9 +412,8 @@
             <i class="arrow"></i>
         </button>
     </div>
-
 </section>
-<section class="map basic">
+<section class="map basic scroll-contact">
 <div class="left-map">
     <div class="vizitcard">
         <img src="image/logo-2.svg" alt="kjss">
@@ -440,7 +439,7 @@
 
         <div class="form-group">
             <label for="number">Телефон</label>
-            <input type="number" id="number" placeholder="Введите ваш Телефон">
+            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="6" maxlength="11">
         </div>
 
         <button class="buttons2">Отправить</button>
@@ -477,6 +476,7 @@
 
     </div>
 </footer>
-<script src="js/script.js"></script>
+<!--<script src="js/script.js"></script>-->
+<script src="js/main.js"></script>
 </body>
 </html>
