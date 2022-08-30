@@ -51,15 +51,15 @@
 <section class="slader-our-work scroll-portfolio" id="box1">
     <h3 class="title-h3-margin">Наши работы</h3>
     <div class="slaider-group">
-        <button class="btn-icon left rotate">
+        <button class="btn-icon left rotate" onclick="slideLeftWork()">
             <i class="arrow"></i>
         </button>
         <div class="images">
-            <img src="image/our-works/pic2.jpg" alt="gh" class="active-left">
-            <img src="image/our-works/pic1.jpg" alt="gh" class="active">
-            <img src="image/our-works/pic3.jpg" alt="gh" class="active-right">
+            <img src="image/our-works/pic1.jpeg" alt="gh" class="active-left">
+            <img src="image/our-works/pic2.jpeg" alt="gh" class="active">
+            <img src="image/our-works/pic3.jpeg" alt="gh" class="active-right">
         </div>
-        <button class="btn-icon right">
+        <button class="btn-icon right" onclick="slideRightWork()">
             <i class="arrow"></i>
         </button>
         <div class="slider-bottom-controls">
@@ -75,15 +75,15 @@
     <div class="our-location-content basic">
         <h3 class="title-h3-margin">Наши локации</h3>
         <div class="slaider-group">
-            <button class="btn-icon left rotate">
+            <button class="btn-icon left rotate" onclick="slideLeft()">
                 <i class="arrow"></i>
             </button>
             <div class="images">
-                <img src="image/our-location/im1-our-lock.png" alt="gdh">
-                <img src="image/our-location/im2-our-lock.png" alt="ggh">
-                <img src="image/our-location/im3-our-lock.png" alt="gxh">
+                <img src="image/our-location/pic1.jpeg" alt="gdh">
+                <img src="image/our-location/pic2.jpeg" alt="ggh">
+                <img src="image/our-location/pic3.jpeg" alt="gxh">
             </div>
-            <button class="btn-icon right">
+            <button class="btn-icon right" onclick="slideRight()">
                 <i class="arrow"></i>
             </button>
         </div>
@@ -439,7 +439,7 @@
 
         <div class="form-group">
             <label for="number">Телефон</label>
-            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="6" maxlength="11">
+            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="11" maxlength="11">
         </div>
 
         <button class="buttons2">Отправить</button>

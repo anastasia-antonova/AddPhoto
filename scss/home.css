@@ -1064,7 +1064,10 @@ body .map .right-map form .form-group input::placeholder {
   opacity: 0.4;
 }
 body .map .right-map form .form-group input:invalid {
-  border: 2px solid #9f0f0b;
+  border: 1px solid #9f0f0b;
+}
+body .map .right-map form .form-group input:valid {
+  border: 1px solid #2ea400;
 }
 body .map .right-map form .form-group label {
   font-family: "Montserrat";
