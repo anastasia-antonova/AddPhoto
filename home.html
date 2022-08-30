@@ -12,24 +12,24 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href="">Портфолио</a>
+                    <a href="#" class="button-portfolio" onclick="scrollToSome('.scroll-portfolio')">Портфолио</a>
                 </li>
                 <li>
-                    <a href="">Виды работ</a>
+                    <a href="#" onclick="scrollToSome('.scroll-work-types')">Виды работ</a>
                 </li>
                 <li>
-                    <a href="">О фотостудии</a>
+                    <a href="#" onclick="scrollToSome('.scroll-about-us')">О фотостудии</a>
                 </li>
                 <li>
-                    <a href="">Услуги и цены</a>
+                    <a href="#" onclick="scrollToSome('.scroll-price')">Услуги и цены</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a href="#" onclick="scrollToSome('.scroll-contact')">Контакты</a>
                 </li>
             </ul>
         </div>
         <div class="call">
-            <button class="buttons1">Обратный звонок</button>
+            <button class="buttons1" onclick="callPhone('+7 (499) 344 60 91')">Обратный звонок</button>
             <a href="" class="p-text-header">+7 (499) 344 60 91</a>
         </div>
     </div>
@@ -48,7 +48,7 @@
         <button class="buttons2">Получить консультацию</button>
     </div>
 </section>
-<section class="slader-our-work">
+<section class="slader-our-work scroll-portfolio" id="box1">
     <h3 class="title-h3-margin">Наши работы</h3>
     <div class="slaider-group">
         <button class="btn-icon left rotate">
@@ -94,7 +94,7 @@
     <h3 class="title-h3-margin">Оформление фотостудии</h3>
     <iframe width="100%" height="675" src="https://www.youtube.com/embed/h9cb1P7oxGU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 </section>
-<section class="grid basic">
+<section class="grid basic scroll-work-types">
     <h3 class="title-h3-margin">Виды услуг</h3>
 <div class="grid-box">
     <div class="grid-body">
@@ -114,5 +114,369 @@
     </div>
 </div>
 </section>
+<section class="stages basic">
+    <h3 class="title-h3-margin">Этапы работ</h3>
+    <div class="content-stages">
+        <div class="box-stage">
+            <div class="box-text">
+                <p class="title-box-text">Заявка</p>
+                <p>Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягких. </p>
+            </div>
+
+        </div>
+        <div class="box-stage">
+            <div class="box-text">
+                <p class="title-box-text">Бронь</p>
+                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
+            </div>
+
+        </div>
+        <div class="box-stage">
+            <div class="box-text">
+                <p class="title-box-text">Съёмка</p>
+                <p>Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягких. </p>
+            </div>
+
+        </div>
+        <div class="box-stage">
+            <div class="box-text">
+                <p class="title-box-text">Составление <br>
+                    Технического задания</p>
+                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
+            </div>
+
+        </div>
+        <div class="box-stage">
+            <div class="box-text">
+                <p class="title-box-text">Готовые фото</p>
+                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="text-block1 scroll-about-us" id="text-block1">
+    <div class="basic">
+        <h3 class="title-h3-margin">Фотостудия для любых идейных фотоссесий</h3>
+        <p>Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один
+            из наших залов.
+            А их, -на секундочку, -аж семь штук.
+            Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет для любой фотоссесии, а мы
+            хотим рассказать
+            вам о все подробнее.</p>
+        <p>Какие идеи можно воплотить?</p>
+        <p>• Фотоссесия Love Story</p>
+        <p class="hidden">Мечтаете показать всему миру вашу историю создания любви или хранить снимки в памятном
+            альбоме, то это фотоссесия
+            отлично подойдет вам. Расскажите вашу историю с любимым человеком в фотографиях в необычном месте.</p>
+        <p class="toggle">• Семейная фотоссесия</p>
+        <p class="toggle">Семья — это самое главное в жизни любого человека. Хотите повесить фотографии в вашем уютном
+            доме, смотреть на
+            них и испытывать прилив нежности, значит семейная фотоссесия в нашей фотостудии станет отличным
+            вариантом.</p>
+        <p class="toggle">• Фотоссесия для беременных девушек</p>
+        <p class="toggle">Желаете сохранить воспоминания о прекрасном времени в жизни каждой женщины? Наши локации
+            помогут вам организовать и воссоздать
+            в фотографиях любовь матери и еще не родившегося ребенка.</p>
+        <p class="toggle"> • Фотоссесия «Деловой стиль».</p>
+        <p class="toggle">Вы не из тех, кто любит яркие чувства, эмоции и считаете себя сдержанным. Вам нужны
+            фотографии, где вы раскроетесь
+            как профессионал, произведете впечатление как деловой человек. Эта фотоссесия станет вашим правильным
+            решением.</p>
+        <p class="toggle">• Фотоссесия для девушек и парней.</p>
+        <p class="toggle">• Фотоссесия для девушек и парней.</p>
+        <p class="toggle">Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или
+            парней поможет воплотить любые идеи.</p>
+        <p class="toggle">Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши
+            фотозалы помогают вам и вдохновляют.</p>
+        <p class="toggle">Кстати, о них…</p>
+        <p class="toggle">Все семь фото локаций уникальные в своем роде. Мы пытались воссоздать непохожесть на другие
+            фотостудии не только
+            в городе, но и во всей стране. Каждый зал отличается от других по дизайнерскому решению и интерьеру. И
+            каждый
+            зал пропитан своим духом, стилем и видится
+            для каждого нашего посетителя по-разному.
+            Светлые помещения помогут получить более качественные, яркие фотоснимки. Трендовая мебель и другие предметы
+            интерьера можно двигать и активно использовать в фотосъемках. Локации подойдут для любых людей и задач:
+            блогеров
+            и медийных личностей, обычных
+            и счастливых семей, предпринимателей и подростков.
+            Что еще нужно знать о нас?</p>
+        <p class="toggle"> Оборудование. Неотъемлемая часть любой фотостудии и нередко владельцы фотостудий экономят на
+            этой важной части.
+            Мы используем все оборудование только от профессиональных продавцов, которые уже не один год предлагают свои
+            товары на мировом рынке. Вы найдете все что нужно и необходимо для работы фотографов, для создания образов и
+            света. Ведь именно от оборудования часто зависит качество получающихся фотоснимков.</p>
+        <button onclick="toggleButton()" class="show-more-text">Подробнее</button>
+        <button onclick="toggleButton()" class="hide-text">Скрыть</button>
+    </div>
+</section>
+<section class="price scroll-price">
+    <div class="basic">
+        <h3 class="title-h3-margin">Стоимость фотосесии</h3>
+        <div class="container-price3">
+            <div class="container-price">
+                <div class="padding-price">
+                    <p class="name-price">MINI</p>
+                    <div class="price-text">
+                        <p >2500 $</p>
+                        <p>/ 1 локация</p>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li>Длительность — 30 минут</li>
+                            <li>Исходники — До 100 штук</li>
+                            <li>Ретушь — 4 фото</li>
+                            <li>Аренда фотостудии — Бесплатно</li>
+                            <li>Любой образ</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Дополнительные услуги</p>
+                <div class="additional-services">
+                    <p>Помощь в позировании</p>
+                    <p>Визажист + 2000 $</p>
+                    <p>Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
+                </div>
+                <button class="buttons2">Забронировать</button>
+            </div>
+            <div class="container-price">
+                <div class="padding-price">
+                    <p class="name-price">STANDART</p>
+                    <div class="price-text">
+                        <p >5000 $</p>
+                        <p>/ 2 локации </p>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li>Длительность — 1 час 20 минут </li>
+                            <li>Исходники — До 200 штук</li>
+                            <li>Ретушь — 8 фото</li>
+                            <li>Аренда фотостудии — Бесплатно</li>
+                            <li>Любой образ</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Дополнительные услуги</p>
+                <div class="additional-services">
+                    <p>Помощь в позировании</p>
+                    <p>Визажист + 2000 ₽</p>
+                    <p>Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
+                </div>
+                <button class="buttons2">Забронировать</button>
+            </div>
+            <div class="container-price">
+                <div class="padding-price">
+                    <p class="name-price">MAXI</p>
+                    <div class="price-text">
+                        <p >N $</p>
+                        <p>/ Максимальное количество локаций</p>
+                    </div>
+                    <div class="list-price">
+                        <ul>
+                            <li>Длительность — 4 часа</li>
+                            <li>Исходники — До 500 штук</li>
+                            <li>Ретушь — 50 фото</li>
+                            <li>Аренда фотостудии — Бесплатно</li>
+                            <li>Визажист — Make-Up, Укладка</li>
+                            <li>Предварительный подбор <br> образов — До 8 образов</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Дополнительные услуги</p>
+                <div class="additional-services">
+                    <p>Дополнительная ретушь <br> фото — 1 шт. / 250 ₽</p>
+                </div>
+                <button class="buttons2">Забронировать</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-block1 background-text" id="text-block2">
+    <div class="basic">
+        <h3 class="title-h3-margin">Фотоискусство в тренде. Любая фотоссесия ваша история</h3>
+        <p>Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один
+            из наших залов.
+            А их, -на секундочку, -аж семь штук.
+            Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет для любой фотоссесии, а мы
+            хотим рассказать
+            вам о все подробнее.</p>
+        <p>Какие идеи можно воплотить?</p>
+        <p>• Фотоссесия Love Story</p>
+        <p class="hidden">Мечтаете показать всему миру вашу историю создания любви или хранить снимки в памятном
+            альбоме, то это фотоссесия
+            отлично подойдет вам. Расскажите вашу историю с любимым человеком в фотографиях в необычном месте.</p>
+        <p class="toggle">• Семейная фотоссесия</p>
+        <p class="toggle">Семья — это самое главное в жизни любого человека. Хотите повесить фотографии в вашем уютном
+            доме, смотреть на
+            них и испытывать прилив нежности, значит семейная фотоссесия в нашей фотостудии станет отличным
+            вариантом.</p>
+        <p class="toggle">• Фотоссесия для беременных девушек</p>
+        <p class="toggle">Желаете сохранить воспоминания о прекрасном времени в жизни каждой женщины? Наши локации
+            помогут вам организовать и воссоздать
+            в фотографиях любовь матери и еще не родившегося ребенка.</p>
+        <p class="toggle"> • Фотоссесия «Деловой стиль».</p>
+        <p class="toggle">Вы не из тех, кто любит яркие чувства, эмоции и считаете себя сдержанным. Вам нужны
+            фотографии, где вы раскроетесь
+            как профессионал, произведете впечатление как деловой человек. Эта фотоссесия станет вашим правильным
+            решением.</p>
+        <p class="toggle">• Фотоссесия для девушек и парней.</p>
+        <p class="toggle">• Фотоссесия для девушек и парней.</p>
+        <p class="toggle">Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или
+            парней поможет воплотить любые идеи.</p>
+        <p class="toggle">Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши
+            фотозалы помогают вам и вдохновляют.</p>
+        <p class="toggle">Кстати, о них…</p>
+        <p class="toggle">Все семь фото локаций уникальные в своем роде. Мы пытались воссоздать непохожесть на другие
+            фотостудии не только
+            в городе, но и во всей стране. Каждый зал отличается от других по дизайнерскому решению и интерьеру. И
+            каждый
+            зал пропитан своим духом, стилем и видится
+            для каждого нашего посетителя по-разному.
+            Светлые помещения помогут получить более качественные, яркие фотоснимки. Трендовая мебель и другие предметы
+            интерьера можно двигать и активно использовать в фотосъемках. Локации подойдут для любых людей и задач:
+            блогеров
+            и медийных личностей, обычных
+            и счастливых семей, предпринимателей и подростков.
+            Что еще нужно знать о нас?</p>
+        <p class="toggle"> Оборудование. Неотъемлемая часть любой фотостудии и нередко владельцы фотостудий экономят на
+            этой важной части.
+            Мы используем все оборудование только от профессиональных продавцов, которые уже не один год предлагают свои
+            товары на мировом рынке. Вы найдете все что нужно и необходимо для работы фотографов, для создания образов и
+            света. Ведь именно от оборудования часто зависит качество получающихся фотоснимков.</p>
+        <button onclick="showbox()" class="show-more-text">Подробнее</button>
+        <button onclick="hidebox()" class="hide-text">Скрыть</button>
+    </div>
+</section>
+<section class="gift">
+    <h3 class="title-h3-margin">Подарочный сертификат на фотосессию</h3>
+    <div class="basic">
+        <div class="left-gift">
+            <p>СЕРТИФИКАТ НА ФОТОСЕССИЮ</p>
+            <h2 class="title-h3">Это подарок,
+                который западает <br>
+                в душу</h2>
+            <ul>
+                <li>Креативное оформление</li>
+                <li>Открытый календарь</li>
+                <li>Всё включено</li>
+            </ul>
+
+        </div>
+        <div class="right-gift">
+            <div class="buy-right-gift">
+                <p>Срок действия сертификата: 2 месяца со дня приобретения.</p>
+                <button class="buttons2">Приобрести</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <h3 class="title-h3-margin">Отзывы</h3>
+    <div class="three-card-reviews basic">
+        <button class="btn-icon left rotate">
+            <i class="arrow"></i>
+        </button>
+        <div class="card-reviews">
+            <img src="image/reviews/photo1.png" alt="ffg">
+            <div class="text-reviews">
+                <p class="name-review">Мария</p>
+                <p class="p-text">
+                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
+                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
+                <a href="">Показать ещё</a>
+            </div>
+        </div>
+        <div class="card-reviews">
+            <img src="image/reviews/photo2.png"class="photo2-reviews" alt="ffg">
+            <div class="text-reviews">
+                <p class="name-review">Сергей</p>
+                <p class="p-text">
+                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
+                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
+                <a href="">Показать ещё</a>
+            </div>
+            <button class="buttons2">Добавить отзыв</button>
+        </div>
+        <div class="card-reviews">
+            <img src="image/reviews/photo3.png" alt="ffg" class="photo3-reviews">
+            <div class="text-reviews">
+                <p class="name-review">Руслан</p>
+                <p class="p-text">
+                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
+                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
+                <a href="">Показать ещё</a>
+            </div>
+        </div>
+        <button class="btn-icon right">
+            <i class="arrow"></i>
+        </button>
+    </div>
+</section>
+<section class="map basic scroll-contact">
+<div class="left-map">
+    <div class="vizitcard">
+        <img src="image/logo-2.svg" alt="kjss">
+        <p>+7 (499) 344 60 91</p>
+        <p>content@addmarkets.ru</p>
+        <p>Режим работы: <br>
+            ПН-ПТ 09:00 - 18:00</p>
+    </div>
+</div>
+<div class="right-map">
+    <h2>Форма обратной связи</h2>
+    <form action="">
+
+        <div class="form-group" >
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Введите ваш E-mail">
+        </div>
+
+        <div class="form-group">
+            <label for="number">Телефон</label>
+            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="6" maxlength="11">
+        </div>
+
+        <button class="buttons2">Отправить</button>
+
+    </form>
+    <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+</div>
+</section>
+<footer>
+    <div class="content-footer basic">
+        <img src="image/logoblack.svg" alt="hfg" class="logo-footer">
+        <div class="menu-footer">
+            <ul>
+                <li><a href="">Портфолио</a></li>
+                <li><a href="">Виды работ</a></li>
+                <li><a href="">О фотостудии</a></li>
+                <li><a href="">Услуги и цены</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="dawn-footer basic">
+        <div class="content-dawn-footer">
+            <p>Наши социальные сети:</p>
+            <div class="buttons">
+                <button class="insta-button"></button>
+                <button class="facebook-button"></button>
+                <button class="twitter-button"></button>
+                <button class="telegram-button"></button>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!--<script src="js/script.js"></script>-->
+<script src="js/main.js"></script>
 </body>
 </html>
