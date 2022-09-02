@@ -78,3 +78,41 @@ function slideLeftWork() {
 
 }
 
+function send() {
+    const form = document.querySelector('.form-section');
+    if(form) {
+        const groups = form.querySelectorAll('.form-group');
+        console.log(groups)
+        for (let a of groups) {
+            const input = a.querySelector('input');
+            let required = false;
+            let number = false;
+            if (input.value === '') {
+                required = true;
+                a.classList.add('form-group--error');
+                a.querySelector('.required').style = "display: block";
+                if (input.id === 'number') {
+                    a.querySelector('.not-number').style = "display: none";
+                }
+            } else {
+                if (input.id === 'number') {
+                    a.querySelector('.required').style = "display: none";
+                    if (!input.value.match(/^\d+$/)) {
+                        number = true;
+                        a.querySelector('.not-number').style = "display: block";
+                        a.classList.add('form-group--error');
+                    }
+                }
+            }
+            if(!required && !number) {
+                a.classList.remove('form-group--error');
+                a.querySelector('.required').style = "display: none";
+                if (input.id === 'number') {
+                    a.querySelector('.not-number').style = "display: none";
+                }
+            }
+        }
+    }
+
+
+}

@@ -425,25 +425,27 @@
 </div>
 <div class="right-map">
     <h2>Форма обратной связи</h2>
-    <form action="">
-
-        <div class="form-group" >
+    <form action="" class="form-section">
+        <div class="form-group">
             <label for="name">Имя</label>
             <input type="text" id="name" placeholder="Введите ваше имя">
+            <span class="required">Это поле обязательное</span>
         </div>
 
         <div class="form-group">
             <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="Введите ваш E-mail">
+            <span class="required">Это поле обязательное</span>
         </div>
 
         <div class="form-group">
             <label for="number">Телефон</label>
-            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="11" maxlength="11">
+            <input type="text" id="number" placeholder="Введите ваш Телефон">
+            <span class="required">Это поле обязательное</span>
+            <span class="not-number">Вводить только числа</span>
         </div>
 
-        <button class="buttons2">Отправить</button>
-
+        <button class="buttons2" type="button" onclick="send()">Отправить</button>
     </form>
     <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
 </div>
@@ -461,7 +463,6 @@
                 <li><a href="">Контакты</a></li>
             </ul>
         </div>
-
     </div>
     <div class="dawn-footer basic">
         <div class="content-dawn-footer">
@@ -473,7 +474,6 @@
                 <button class="telegram-button"></button>
             </div>
         </div>
-
     </div>
 </footer>
 <!--<script src="js/script.js"></script>-->

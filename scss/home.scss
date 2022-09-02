@@ -815,6 +815,7 @@ body {
         }
       }
     }
+
   }
 
   .reviews {
@@ -867,6 +868,7 @@ body {
             width: 236px;
             height: 231px;
           }
+
           &.photo3-reviews {
             width: 236px;
             height: 223px;
@@ -884,7 +886,6 @@ body {
 
           .p-text {
             color: $mine_shaft;
-
           }
 
           >a {
@@ -897,6 +898,7 @@ body {
             color: $tango;
           }
         }
+
         .buttons2 {
           width: 100%;
           height: 48px;
@@ -947,7 +949,6 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
         border-radius: 12px;
 
-
         img {
           width: 113px;
           height: 35px;
@@ -997,6 +998,25 @@ body {
           display: flex;
           flex-direction: column;
 
+          &.form-group--error {
+            span {
+              display: block;
+              font-family: "Montserrat";
+              color: #ff1744;
+              margin-top: 2px;
+              font-size: 12px;
+            }
+
+            label {
+              color: red;
+            }
+
+            input {
+              border: 1px solid red;
+              color: red;
+            }
+          }
+
           input {
             min-width: 388px;
             max-width: 388px;
@@ -1016,12 +1036,6 @@ body {
               opacity: 0.4;
 
             }
-            &:invalid {
-              border: 1px solid #9f0f0b;
-            }
-            &:valid {
-              border: 1px solid #2ea400;
-            }
           }
 
           label {
@@ -1030,9 +1044,12 @@ body {
             font-weight: 500;
             font-size: 15px;
             line-height: 12px;
-            color: #121621;
-            opacity: 0.4;
+            color: rgba(18, 22, 33, 0.4);
             margin-bottom: 8px;
+          }
+
+          span {
+            display: none;
           }
         }
         .buttons2 {
@@ -1092,17 +1109,13 @@ body {
               &:hover {
                 color: $tango;
               }
-
             }
-
             &:last-child {
               margin-right: 0;
             }
-
           }
         }
       }
-
     }
     .dawn-footer {
       max-width: 436px;
@@ -1124,9 +1137,9 @@ body {
           font-size: 16px;
           line-height: 28px;
           color: $mine_shaft;
-
         }
         .buttons{
+
           button {
             border: none;
             background-repeat: no-repeat;
@@ -1142,22 +1155,22 @@ body {
               height: 31px;
               mask-image: url('../image/footer/INSTAGRAM_3.svg');
               -webkit-mask-image: url('../image/footer/INSTAGRAM_3.svg');
-
             }
+
             &.facebook-button {
               width: 22px;
               height: 31px;
               mask-image: url('../image/footer/FACEBOOK_2.svg');
-              -webkit-mask-image: url('../image/footer/FACEBOOK_2.svg');
-
+              -webkit-mask-image: url('../image/footer/FACEBOOK_2.svg')
             }
+
             &.twitter-button {
               width: 31px;
               height: 28px;
               mask-image: url('../image/footer/TWITTER_3.svg');
               -webkit-mask-image: url('../image/footer/TWITTER_3.svg');
-
             }
+
             &.telegram-button {
               width: 33px;
               height: 26px;
@@ -1169,6 +1182,7 @@ body {
             &:hover {
               background-color: #E97522;
             }
+
           }
         }
       }
