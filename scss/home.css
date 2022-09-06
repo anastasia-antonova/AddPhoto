@@ -1053,11 +1053,11 @@ body .map .right-map form .form-group.form-group--error span {
   font-size: 12px;
 }
 body .map .right-map form .form-group.form-group--error label {
-  color: red;
+  color: #ff1744;
 }
 body .map .right-map form .form-group.form-group--error input {
-  border: 1px solid red;
-  color: red;
+  border: 1px solid #ff1744;
+  color: #ff1744;
 }
 body .map .right-map form .form-group input {
   min-width: 388px;
