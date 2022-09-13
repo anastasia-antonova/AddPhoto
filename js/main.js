@@ -114,3 +114,52 @@ function send() {
         }
     }
 }
+
+const users = [
+    { name: "Мария", avatarImage: "photo1.png", comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus distinctio exercitationem omnis quis. Aliquam aut, explicabo maiores nihil rem rerum sed suscipit vitae!"},
+    { name: "Сергей", avatarImage: "photo2.png",  comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus distinctio exercitationem omnis quis. Aliquam aut, explicabo maiores nihil rem rerum sed suscipit vitae!"},
+    { name: "Руслан", avatarImage: "photo3.png",  comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus distinctio exercitationem omnis quis. Aliquam aut, explicabo maiores nihil rem rerum sed suscipit vitae!"}
+]
+const reviewSection = document.getElementsByClassName('card-reviews-section');
+let myHtmlReview = '';
+for (let element of users) {
+    let button = '';
+    if (element.name === 'Сергей') {
+        button = `<button class="buttons2">Добавить отзыв</button>`
+    }
+    myHtmlReview += `<div class="card-reviews">
+                    <img src="image/reviews/${element.avatarImage}" alt="ffg">
+                    <div class="text-reviews">
+                        <p class="name-review">${element.name}</p>
+                        <p class="p-text">${element.comment}</p>
+                        <a href="">Показать ещё</a>
+                    </div>
+                    ${button}
+                </div>`
+}
+reviewSection[0].innerHTML = myHtmlReview
+
+const boxStages = [
+    {tittle: 'Заявка', text: `Съешь еще этих мягких французских булок, да выпей <br>чаю. Съешь еще этих мягки`, index: "1"},
+    {tittle: 'Бронь', text: `Съешь еще этих мягких французских булок, да выпей <br>чаю. Съешь еще этих мягки`, index: "2"},
+    {tittle: 'Съёмка', text: `Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягки`, index: "3"},
+    {tittle: `Составление <br> Технического задания`, text: `Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягки`, index: "4"},
+    {tittle: 'Готовые фото', text: `Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягки`, index: "5"}
+]
+const stages = document.getElementsByClassName('content-stages');
+let myHtmlStages = '';
+
+for (let element of boxStages) {
+    myHtmlStages += `<div class="box-stage" data-index="${element.index}">
+            <div class="box-text">
+                <p class="title-box-text">${element.tittle}</p>
+                <p>${element.text}</p>
+            </div>
+        </div>`
+}
+stages[0].innerHTML = myHtmlStages;
+
+
+
+
+
