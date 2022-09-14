@@ -733,6 +733,11 @@ body {
         align-items: center;
         margin-bottom: 161px;
 
+        @include media_tablet {
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
         .container-price {
 
           width: 33%;
@@ -743,6 +748,12 @@ body {
           background-repeat: no-repeat;
           background-position-x: 235px;
           padding: 48px 14px 42px;
+
+          @include media_tablet {
+            background-position-x: 244px;
+            width: 44%;
+            margin-right: 0;
+          }
 
           .padding-price {
             padding-left: 31px;
@@ -797,6 +808,13 @@ body {
                   line-height: 140%;
                   color: $tundora-black;
                   margin-bottom: 19px;
+
+                  @include media_tablet {
+                    font-weight: 500;
+                    font-size: 16px;
+                  }
+
+
 
                   &:before {
                     content: "";
@@ -861,10 +879,20 @@ body {
 
           &:first-child {
             background-color: $black_haze;
+            @include media_tablet {
+
+            }
+
+
           }
           &:last-child {
             margin-right: 0;
             background-color: $sidecara;
+
+            @include media_tablet {
+              margin: 34px auto;
+            }
+
           }
           &:nth-child(2){
             background-color: $merino;
@@ -887,6 +915,10 @@ body {
       border-radius: 25px;
       display: flex;
       padding: 112px 199px 38px 120px;
+
+      @include media_tablet {
+        padding: 112px 80px 38px 80px;
+      }
 
       .left-gift {
         width: 50%;
@@ -911,6 +943,11 @@ body {
           line-height: 67px;
           margin-top: 8px;
           margin-bottom: 53px;
+
+          @include media_tablet {
+            font-size: 36px;
+            line-height: 50px;
+          }
         }
 
         ul {
@@ -961,6 +998,13 @@ body {
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
+
+          @include media_tablet {
+            width: 438px;
+            height: 438px;
+            left: -124px;
+            top: -98px;
+          }
         }
 
         .buy-right-gift {
@@ -1090,6 +1134,10 @@ body {
     margin-top: 100px;
     margin-bottom: 150px;
 
+    @include media_tablet {
+      justify-content: flex-start;
+    }
+
     .left-map {
       flex-grow: 1.22;
       min-width: 716px;
@@ -1102,6 +1150,12 @@ body {
       border-radius: 25px 0 0 25px;
       margin-top: 26px;
       box-shadow: (0px 2.69px 6.65px rgba(121, 121, 121, 0.2));
+
+      @include media_tablet {
+        flex-grow: unset;
+        min-width: 382px;
+        width: 50%;
+      }
 
       .vizitcard {
         box-sizing: border-box;
@@ -1119,6 +1173,10 @@ body {
         left: 383px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
         border-radius: 12px;
+
+        @include media_tablet {
+          left: 217px;
+        }
 
         img {
           width: 113px;
@@ -1148,6 +1206,11 @@ body {
       border-radius: 25px;
       z-index: 2;
 
+      @include media_tablet {
+        box-sizing: border-box;
+        max-width: 482px;
+      }
+
       h2 {
         font-family: 'Montserrat';
         font-style: normal;
@@ -1164,12 +1227,17 @@ body {
         align-items: center;
         max-width: 420px;
 
+        @include media_tablet {
+          max-width: 380px;
+        }
+
         .form-group {
           margin-bottom: 16px;
           display: flex;
           flex-direction: column;
 
           &.form-group--error {
+
             span {
               display: block;
               font-family: "Montserrat";
@@ -1264,10 +1332,29 @@ body {
         margin-bottom: 32px;
       }
       .menu-footer {
+
+        @include media_tablet {
+          max-width: 511px;
+        }
         ul {
           display: flex;
+
+          @include media_tablet {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
           li {
             margin-right: 57px;
+
+            @include media_tablet {
+              margin-right: 93px;
+            }
+
+            &:nth-child(3) {
+              @include media_tablet {
+                margin-right: 0;
+              }
+            }
 
             a {
               font-family: 'Montserrat';
@@ -1361,6 +1448,7 @@ body {
   }
 
   @include media_tablet {
+
 
 
   }
