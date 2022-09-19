@@ -160,6 +160,14 @@ for (let element of boxStages) {
 stages[0].innerHTML = myHtmlStages;
 
 
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.burger-section').querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+})
+
+
 
 
 

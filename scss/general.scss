@@ -9,6 +9,11 @@
   @include media_tablet {
     padding: 0 80px;
   }
+
+  @include media_mobile {
+    padding: 0 16px;
+  }
+
 }
 
 .buttons1 {
@@ -163,6 +168,14 @@ a{
   -webkit-mask-size: 23px 47px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+
+
+  @include media_mobile {
+    -webkit-mask-size: 10px 19px;
+
+  }
+
+
 }
 
 .rotate {
@@ -182,6 +195,10 @@ a{
   @include media_tablet {
     width: 64px;
     height: 64px;
+  }
+  @include media_mobile {
+    width: 36px;
+    height: 36px;
   }
 
   &:hover {
