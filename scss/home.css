@@ -429,6 +429,14 @@ body header .content .menu ul {
 }
 body header .content .menu ul li {
   align-items: center;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+body header .content .menu ul li:first-child {
+  margin-left: 0;
+}
+body header .content .menu ul li:last-child {
+  margin-right: 0;
 }
 body header .content .menu ul li a {
   font-family: "Montserrat";
@@ -834,8 +842,8 @@ body .video iframe {
   }
 }
 @media only screen and (max-width: 640px) {
-  body .grid {
-    display: none;
+  body .grid.basic {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -844,12 +852,33 @@ body .video iframe {
     margin-top: 100px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .grid h3 {
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+}
 body .grid .grid-body {
   display: grid;
-  grid-template: repeat(5, 335px)/repeat(3, 33%);
-  margin: 0 -13px;
 }
-body .grid .grid-item {
+body .grid .grid-body.desktop {
+  grid-template: repeat(5, 335px)/repeat(3, 33%);
+}
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body.desktop {
+    display: none;
+  }
+}
+body .grid .grid-body.mobile {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body.mobile {
+    display: grid;
+    grid-template: repeat(7, 154px)/repeat(2, 50%);
+  }
+}
+body .grid .grid-body .grid-item {
   margin: 13px;
   background-position: center;
   background-repeat: no-repeat;
@@ -859,7 +888,13 @@ body .grid .grid-item {
   align-items: flex-end;
   position: relative;
 }
-body .grid .grid-item::after {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item {
+    margin: 8px;
+    border-radius: 5px;
+  }
+}
+body .grid .grid-body .grid-item::after {
   content: "";
   width: 100%;
   height: 300px;
@@ -868,7 +903,12 @@ body .grid .grid-item::after {
   background-size: cover;
   border-radius: 15px;
 }
-body .grid .grid-item p {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item::after {
+    border-radius: 5px;
+  }
+}
+body .grid .grid-body .grid-item p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -878,148 +918,95 @@ body .grid .grid-item p {
   padding: 16px 32px;
   z-index: 2;
 }
-body .grid .grid-item.row_span_2 {
+body .grid .grid-body .grid-item.row_span_2 {
   grid-row-start: span 2;
 }
-body .grid .grid-item.column_span_2 {
+body .grid .grid-body .grid-item.column_span_2 {
   grid-column-start: span 2;
 }
-body .grid .grid-item:nth-child(9), body .grid .grid-item:nth-child(10), body .grid .grid-item:nth-child(11) {
+body .grid .grid-body .grid-item:nth-child(9), body .grid .grid-body .grid-item:nth-child(10), body .grid .grid-body .grid-item:nth-child(11) {
   margin-bottom: 0;
 }
-body .grid .grid-item.grid-item-1 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item:nth-child(1), body .grid .grid-body .grid-item:nth-child(3), body .grid .grid-body .grid-item:nth-child(4), body .grid .grid-body .grid-item:nth-child(7), body .grid .grid-body .grid-item:nth-child(9), body .grid .grid-body .grid-item:nth-child(10) {
+    margin-left: 0;
+  }
+  body .grid .grid-body .grid-item:nth-child(2), body .grid .grid-body .grid-item:nth-child(5), body .grid .grid-body .grid-item:nth-child(6), body .grid .grid-body .grid-item:nth-child(8), body .grid .grid-body .grid-item:nth-child(11) {
+    margin-right: 0;
+  }
+}
+body .grid .grid-body .grid-item.grid-item-1 {
   background-image: url("../image/grid/photo1.png");
 }
-body .grid .grid-item.grid-item-2 {
+body .grid .grid-body .grid-item.grid-item-2 {
   background-image: url("../image/grid/photo2.png");
 }
-body .grid .grid-item.grid-item-3 {
+body .grid .grid-body .grid-item.grid-item-3 {
   background-image: url("../image/grid/photo3.png");
 }
-body .grid .grid-item.grid-item-4 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-3 {
+    background-image: url("../image/grid/photo4.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-4 {
   background-image: url("../image/grid/photo4.png");
 }
-body .grid .grid-item.grid-item-5 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-4 {
+    background-image: url("../image/grid/photo6.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-5 {
   background-image: url("../image/grid/photo5.png");
 }
-body .grid .grid-item.grid-item-6 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-5 {
+    background-image: url("../image/grid/photo7.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-6 {
   background-image: url("../image/grid/photo6.png");
 }
-body .grid .grid-item.grid-item-7 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-6 {
+    background-image: url("../image/grid/photo10.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-7 {
   background-image: url("../image/grid/photo7.png");
 }
-body .grid .grid-item.grid-item-8 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-7 {
+    background-image: url("../image/grid/photo3.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-8 {
   background-image: url("../image/grid/photo8.png");
 }
-body .grid .grid-item.grid-item-9 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-8 {
+    background-image: url("../image/grid/photo5.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-9 {
   background-image: url("../image/grid/photo9.png");
 }
-body .grid .grid-item.grid-item-10 {
+body .grid .grid-body .grid-item.grid-item-10 {
   background-image: url("../image/grid/photo10.png");
 }
-body .grid .grid-item.grid-item-11 {
+@media only screen and (max-width: 640px) {
+  body .grid .grid-body .grid-item.grid-item-10 {
+    background-image: url("../image/grid/photo11.png");
+  }
+}
+body .grid .grid-body .grid-item.grid-item-11 {
   background-image: url("../image/grid/photo11.png");
 }
-body .grid-mob {
-  display: none;
-}
 @media only screen and (max-width: 640px) {
-  body .grid-mob {
-    display: block;
+  body .grid .grid-body .grid-item.grid-item-11 {
+    background-image: url("../image/grid/photo8.png");
   }
-}
-@media only screen and (max-width: 1024px) {
-  body .grid-mob h3 {
-    margin-bottom: 80px;
-    margin-top: 100px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  body .grid-mob h3 {
-    margin-bottom: 60px;
-    margin-top: 40px;
-  }
-}
-body .grid-mob .grid-body {
-  display: grid;
-  grid-template: repeat(7, 154px)/repeat(2, 50%);
-}
-body .grid-mob .grid-item {
-  margin: 8px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-}
-body .grid-mob .grid-item::after {
-  content: "";
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 53.07%, #191919 121.9%);
-  background-size: cover;
-  border-radius: 5px;
-}
-body .grid-mob .grid-item p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  padding: 16px 32px;
-  z-index: 2;
-}
-body .grid-mob .grid-item.row_span_2 {
-  grid-row-start: span 2;
-}
-body .grid-mob .grid-item.column_span_2 {
-  grid-column-start: span 2;
-}
-body .grid-mob .grid-item:nth-child(1), body .grid-mob .grid-item:nth-child(3), body .grid-mob .grid-item:nth-child(4), body .grid-mob .grid-item:nth-child(7), body .grid-mob .grid-item:nth-child(9), body .grid-mob .grid-item:nth-child(10) {
-  margin-left: 0;
-}
-body .grid-mob .grid-item:nth-child(2), body .grid-mob .grid-item:nth-child(5), body .grid-mob .grid-item:nth-child(6), body .grid-mob .grid-item:nth-child(8), body .grid-mob .grid-item:nth-child(11) {
-  margin-right: 0;
-}
-body .grid-mob .grid-item:nth-child(9), body .grid-mob .grid-item:nth-child(10), body .grid-mob .grid-item:nth-child(11) {
-  margin-bottom: 0;
-}
-body .grid-mob .grid-item.grid-item-1 {
-  background-image: url("../image/grid/photo1.png");
-}
-body .grid-mob .grid-item.grid-item-2 {
-  background-image: url("../image/grid/photo2.png");
-}
-body .grid-mob .grid-item.grid-item-3 {
-  background-image: url("../image/grid/photo4.png");
-}
-body .grid-mob .grid-item.grid-item-4 {
-  background-image: url("../image/grid/photo6.png");
-}
-body .grid-mob .grid-item.grid-item-5 {
-  background-image: url("../image/grid/photo7.png");
-}
-body .grid-mob .grid-item.grid-item-6 {
-  background-image: url("../image/grid/photo10.png");
-}
-body .grid-mob .grid-item.grid-item-7 {
-  background-image: url("../image/grid/photo3.png");
-}
-body .grid-mob .grid-item.grid-item-8 {
-  background-image: url("../image/grid/photo5.png");
-}
-body .grid-mob .grid-item.grid-item-9 {
-  background-image: url("../image/grid/photo9.png");
-}
-body .grid-mob .grid-item.grid-item-10 {
-  background-image: url("../image/grid/photo11.png");
-}
-body .grid-mob .grid-item.grid-item-11 {
-  background-image: url("../image/grid/photo8.png");
 }
 body .stages {
   min-height: 1212px;
@@ -1223,6 +1210,13 @@ body .text-block1 {
   padding-top: 60px;
   padding-bottom: 46px;
 }
+@media only screen and (max-width: 640px) {
+  body .text-block1 {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 24px;
+  }
+}
 body .text-block1.my-class .hide-text {
   display: block;
 }
@@ -1265,6 +1259,7 @@ body .text-block1 p.hidden {
   text-overflow: ellipsis;
 }
 body .text-block1 button {
+  display: block;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1278,6 +1273,12 @@ body .text-block1 button {
   cursor: pointer;
   position: relative;
   padding-right: 36px;
+}
+@media only screen and (max-width: 640px) {
+  body .text-block1 button {
+    float: initial;
+    margin: 0 auto;
+  }
 }
 body .text-block1 button.hide-text {
   display: none;
@@ -1296,6 +1297,25 @@ body .text-block1 button:after {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (max-width: 640px) {
+  body .text-block1 .basic {
+    padding: 0 16px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .text-block1 .basic h3 {
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .text-block1 .basic p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
 body .price {
   min-height: 1108px;
   background-image: url("../image/price/background.svg");
@@ -1307,9 +1327,21 @@ body .price {
 body .price .basic {
   padding-top: 118px;
 }
+@media only screen and (max-width: 640px) {
+  body .price .basic {
+    padding-top: 60px;
+  }
+}
 body .price .basic .title-h3-margin {
   margin-top: 0;
   margin-bottom: 80px;
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .title-h3-margin {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 140%;
+  }
 }
 body .price .basic .container-price3 {
   display: flex;
@@ -1321,6 +1353,11 @@ body .price .basic .container-price3 {
   body .price .basic .container-price3 {
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 {
+    margin-bottom: 60px;
   }
 }
 body .price .basic .container-price3 .container-price {
@@ -1340,6 +1377,19 @@ body .price .basic .container-price3 .container-price {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price {
+    width: 100%;
+    max-height: 673px;
+    padding: 45px 12.5px 45px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price button {
+    width: 100%;
+  }
+}
 body .price .basic .container-price3 .container-price .padding-price {
   padding-left: 31px;
   display: flex;
@@ -1353,6 +1403,11 @@ body .price .basic .container-price3 .container-price .padding-price .name-price
   line-height: 120%;
   color: #4A4A4A;
   margin-bottom: 16px;
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .padding-price .name-price {
+    margin-bottom: 8px;
+  }
 }
 body .price .basic .container-price3 .container-price .padding-price .price-text {
   margin-bottom: 42px;
@@ -1393,6 +1448,12 @@ body .price .basic .container-price3 .container-price .padding-price .list-price
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .padding-price .list-price ul li {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
 body .price .basic .container-price3 .container-price .padding-price .list-price ul li:before {
   content: "";
   width: 18px;
@@ -1417,6 +1478,11 @@ body .price .basic .container-price3 .container-price .additional-services {
   justify-content: center;
   margin-bottom: 58px;
 }
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .additional-services {
+    flex-wrap: wrap;
+  }
+}
 body .price .basic .container-price3 .container-price .additional-services p {
   font-family: "Montserrat";
   font-style: normal;
@@ -1430,20 +1496,51 @@ body .price .basic .container-price3 .container-price .additional-services p {
   border-radius: 5px;
   padding: 6px;
   cursor: pointer;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .additional-services p {
+    margin-right: 0;
+  }
+}
+body .price .basic .container-price3 .container-price .additional-services p:first-child, body .price .basic .container-price3 .container-price .additional-services p:nth-child(2) {
+  max-width: 150px;
+  margin-bottom: 5px;
 }
 body .price .basic .container-price3 .container-price .additional-services p:last-child {
   margin-right: 0;
 }
-body .price .basic .container-price3 .container-price .additional-services p:hover {
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .additional-services p:last-child {
+    max-width: 305px;
+    min-width: 305px;
+  }
+}
+body .price .basic .container-price3 .container-price .additional-services p:last-child:hover {
   background-color: #F6F5F5;
 }
-body .price .basic .container-price3 .container-price .buttons2 {
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .additional-services p:first-child {
+    margin-right: 2.5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price .additional-services p:nth-child(2) {
+    margin-left: 2.5px;
+  }
+}
+body .price .basic .container-price3 .container-price .additional-services .buttons2 {
   display: block;
   width: 100%;
   margin: auto;
 }
 body .price .basic .container-price3 .container-price:first-child {
   background-color: #F2F4F4;
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price:first-child {
+    margin-right: 2.5px;
+  }
 }
 body .price .basic .container-price3 .container-price:last-child {
   margin-right: 0;
@@ -1452,6 +1549,11 @@ body .price .basic .container-price3 .container-price:last-child {
 @media only screen and (max-width: 1024px) {
   body .price .basic .container-price3 .container-price:last-child {
     margin: 34px auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .price .basic .container-price3 .container-price:last-child {
+    margin: 0;
   }
 }
 body .price .basic .container-price3 .container-price:nth-child(2) {
@@ -1473,9 +1575,37 @@ body .gift .basic {
     padding: 112px 80px 38px 80px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic {
+    max-width: 343px;
+    min-height: 820px;
+    margin: 0 16px;
+    padding: 40px 11px 50px 12px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .gift .basic h3 {
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
 body .gift .basic .left-gift {
   width: 50%;
   min-width: 567px;
+}
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 246px;
+  }
 }
 body .gift .basic .left-gift p {
   font-family: "Montserrat";
@@ -1485,6 +1615,13 @@ body .gift .basic .left-gift p {
   line-height: 120%;
   letter-spacing: 1px;
   color: #C1C1C1;
+}
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift p {
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+  }
 }
 body .gift .basic .left-gift h2 {
   font-size: 48px;
@@ -1501,6 +1638,13 @@ body .gift .basic .left-gift h2 {
     line-height: 50px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift h2 {
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+  }
+}
 body .gift .basic .left-gift ul li {
   font-family: "Montserrat";
   font-style: normal;
@@ -1512,6 +1656,11 @@ body .gift .basic .left-gift ul li {
   margin-bottom: 26px;
   margin-left: 40px;
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift ul li {
+    margin-bottom: 48px;
+  }
+}
 body .gift .basic .left-gift ul li:before {
   content: "";
   width: 24px;
@@ -1522,6 +1671,12 @@ body .gift .basic .left-gift ul li:before {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift ul li:before {
+    top: -26px;
+    left: 92px;
+  }
+}
 body .gift .basic .right-gift {
   width: 50%;
   max-width: 342px;
@@ -1529,6 +1684,12 @@ body .gift .basic .right-gift {
   align-items: flex-end;
   position: relative;
   margin-left: 12px;
+}
+@media only screen and (max-width: 640px) {
+  body .gift .basic .right-gift {
+    width: inherit;
+    margin-left: 0;
+  }
 }
 body .gift .basic .right-gift:before {
   content: "";
@@ -1550,6 +1711,14 @@ body .gift .basic .right-gift:before {
     top: -98px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .right-gift:before {
+    width: 267px;
+    height: 267px;
+    left: 7px;
+    top: -267px;
+  }
+}
 body .gift .basic .right-gift .buy-right-gift p {
   font-family: "Montserrat";
   font-style: normal;
@@ -1560,10 +1729,31 @@ body .gift .basic .right-gift .buy-right-gift p {
   color: #333333;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .right-gift .buy-right-gift p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
 body .gift .basic .right-gift .buy-right-gift button {
   max-height: 48px;
   width: 100%;
   padding: 14px 97px;
+}
+@media only screen and (max-width: 640px) {
+  body .gift .basic .right-gift .buy-right-gift button {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .reviews h3 {
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
 }
 body .reviews .three-card-reviews {
   display: flex;
@@ -1583,6 +1773,16 @@ body .reviews .three-card-reviews .card-reviews-section {
 }
 body .reviews .three-card-reviews .card-reviews-section .card-reviews {
   width: 33%;
+}
+@media only screen and (max-width: 640px) {
+  body .reviews .three-card-reviews .card-reviews-section .card-reviews:nth-child(2), body .reviews .three-card-reviews .card-reviews-section .card-reviews:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .reviews .three-card-reviews .card-reviews-section .card-reviews {
+    width: 100%;
+  }
 }
 body .reviews .three-card-reviews .card-reviews-section .card-reviews:first-child > img {
   width: 233px;
@@ -1604,6 +1804,11 @@ body .reviews .three-card-reviews .card-reviews-section .card-reviews img {
   display: block;
   margin: 100px auto 31px;
 }
+@media only screen and (max-width: 640px) {
+  body .reviews .three-card-reviews .card-reviews-section .card-reviews img {
+    margin: 0 auto 31px;
+  }
+}
 body .reviews .three-card-reviews .card-reviews-section .card-reviews img.photo2-reviews {
   margin-top: 0;
   width: 236px;
@@ -1612,6 +1817,7 @@ body .reviews .three-card-reviews .card-reviews-section .card-reviews img.photo2
 body .reviews .three-card-reviews .card-reviews-section .card-reviews img.photo3-reviews {
   width: 236px;
   height: 223px;
+  display: none;
 }
 body .reviews .three-card-reviews .card-reviews-section .card-reviews .text-reviews {
   font-family: "Montserrat";
@@ -1656,6 +1862,11 @@ body .map {
     justify-content: flex-start;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .map {
+    flex-direction: column;
+  }
+}
 body .map .left-map {
   flex-grow: 1.22;
   min-width: 716px;
@@ -1674,6 +1885,15 @@ body .map .left-map {
     flex-grow: unset;
     min-width: 382px;
     width: 50%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .map .left-map {
+    width: 100%;
+    height: 541px;
+    box-sizing: border-box;
+    min-width: inherit;
+    max-width: 340px;
   }
 }
 body .map .left-map .vizitcard {
@@ -1696,6 +1916,13 @@ body .map .left-map .vizitcard {
 @media only screen and (max-width: 1024px) {
   body .map .left-map .vizitcard {
     left: 217px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .map .left-map .vizitcard {
+    max-width: 238px;
+    height: 258px;
+    left: 43px;
   }
 }
 body .map .left-map .vizitcard img {
@@ -1727,6 +1954,17 @@ body .map .right-map {
     max-width: 482px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .map .right-map {
+    width: 90%;
+    height: 541px;
+    z-index: 1;
+    position: relative;
+    top: -38px;
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+}
 body .map .right-map h2 {
   font-family: "Montserrat";
   font-style: normal;
@@ -1737,6 +1975,13 @@ body .map .right-map h2 {
   text-align: center;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 640px) {
+  body .map .right-map h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+}
 body .map .right-map form {
   display: flex;
   flex-direction: column;
@@ -1746,6 +1991,12 @@ body .map .right-map form {
 @media only screen and (max-width: 1024px) {
   body .map .right-map form {
     max-width: 380px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .map .right-map form {
+    width: 100%;
+    max-width: 280px;
   }
 }
 body .map .right-map form .form-group {
@@ -1781,6 +2032,13 @@ body .map .right-map form .form-group input {
   line-height: 100%;
   padding: 0 16px 0 16px;
 }
+@media only screen and (max-width: 640px) {
+  body .map .right-map form .form-group input {
+    min-width: 280px;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+}
 body .map .right-map form .form-group input::placeholder {
   color: #B1B1B1;
   opacity: 0.4;
@@ -1803,6 +2061,11 @@ body .map .right-map form .buttons2 {
   margin-top: 16px;
   padding: 16px 16px;
 }
+@media only screen and (max-width: 640px) {
+  body .map .right-map form .buttons2 {
+    min-width: 280px;
+  }
+}
 body .map .right-map p {
   font-family: "Montserrat";
   font-style: normal;
@@ -1813,6 +2076,12 @@ body .map .right-map p {
   color: #585858;
   margin-top: 16px;
   min-width: 479px;
+}
+@media only screen and (max-width: 640px) {
+  body .map .right-map p {
+    min-width: inherit;
+    width: 100%;
+  }
 }
 body footer {
   width: 100%;
