@@ -109,6 +109,7 @@ table {
   color: #FFFFFF;
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
   cursor: pointer;
+  width: 100%;
 }
 .buttons2:hover {
   background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
@@ -814,6 +815,7 @@ body .our-location .our-location-content .buttons2 {
   margin: auto;
   padding: 14px 54px;
   margin-bottom: 80px;
+  max-width: 336px;
 }
 @media only screen and (max-width: 640px) {
   body .our-location .our-location-content .buttons2 {
@@ -1645,6 +1647,11 @@ body .gift .basic .left-gift h2 {
     text-align: center;
   }
 }
+@media only screen and (max-width: 640px) {
+  body .gift .basic .left-gift ul {
+    text-align: center;
+  }
+}
 body .gift .basic .left-gift ul li {
   font-family: "Montserrat";
   font-style: normal;
@@ -1659,6 +1666,7 @@ body .gift .basic .left-gift ul li {
 @media only screen and (max-width: 640px) {
   body .gift .basic .left-gift ul li {
     margin-bottom: 48px;
+    margin-left: inherit;
   }
 }
 body .gift .basic .left-gift ul li:before {
@@ -1748,6 +1756,13 @@ body .gift .basic .right-gift .buy-right-gift button {
   }
 }
 @media only screen and (max-width: 640px) {
+  body .reviews .buttons2 {
+    max-width: 320px;
+    min-width: 320px;
+    margin: 0 27.5px;
+  }
+}
+@media only screen and (max-width: 640px) {
   body .reviews h3 {
     font-size: 24px;
     line-height: 140%;
@@ -1762,6 +1777,11 @@ body .reviews .three-card-reviews {
   padding-right: 25px;
   position: relative;
   margin-bottom: 86px;
+}
+@media only screen and (max-width: 640px) {
+  body .reviews .three-card-reviews {
+    margin-bottom: inherit;
+  }
 }
 body .reviews .three-card-reviews .left {
   top: 306px;
@@ -1829,6 +1849,11 @@ body .reviews .three-card-reviews .card-reviews-section .card-reviews .text-revi
   text-align: center;
   margin-bottom: 89px;
 }
+@media only screen and (max-width: 640px) {
+  body .reviews .three-card-reviews .card-reviews-section .card-reviews .text-reviews {
+    margin-bottom: 32px;
+  }
+}
 body .reviews .three-card-reviews .card-reviews-section .card-reviews .text-reviews .p-text {
   color: #333333;
 }
@@ -1865,6 +1890,7 @@ body .map {
 @media only screen and (max-width: 640px) {
   body .map {
     flex-direction: column;
+    margin-bottom: 120px;
   }
 }
 body .map .left-map {
@@ -1936,7 +1962,7 @@ body .map .left-map .vizitcard p {
 body .map .left-map .vizitcard p:last-child {
   line-height: 24px;
 }
-body .map .right-map {
+body .map .right-map .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1949,13 +1975,13 @@ body .map .right-map {
   z-index: 2;
 }
 @media only screen and (max-width: 1024px) {
-  body .map .right-map {
+  body .map .right-map .form {
     box-sizing: border-box;
     max-width: 482px;
   }
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map {
+  body .map .right-map .form {
     width: 90%;
     height: 541px;
     z-index: 1;
@@ -1965,7 +1991,7 @@ body .map .right-map {
     padding-bottom: 52px;
   }
 }
-body .map .right-map h2 {
+body .map .right-map .form h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1976,49 +2002,49 @@ body .map .right-map h2 {
   margin-bottom: 32px;
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map h2 {
+  body .map .right-map .form h2 {
     font-size: 22px;
     margin-bottom: 40px;
     white-space: nowrap;
   }
 }
-body .map .right-map form {
+body .map .right-map .form form {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 420px;
 }
 @media only screen and (max-width: 1024px) {
-  body .map .right-map form {
+  body .map .right-map .form form {
     max-width: 380px;
   }
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map form {
+  body .map .right-map .form form {
     width: 100%;
     max-width: 280px;
   }
 }
-body .map .right-map form .form-group {
+body .map .right-map .form form .form-group {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
-body .map .right-map form .form-group.form-group--error span {
+body .map .right-map .form form .form-group.form-group--error span {
   display: block;
   font-family: "Montserrat";
   color: #ff1744;
   margin-top: 2px;
   font-size: 12px;
 }
-body .map .right-map form .form-group.form-group--error label {
+body .map .right-map .form form .form-group.form-group--error label {
   color: #ff1744;
 }
-body .map .right-map form .form-group.form-group--error input {
+body .map .right-map .form form .form-group.form-group--error input {
   border: 1px solid #ff1744;
   color: #ff1744;
 }
-body .map .right-map form .form-group input {
+body .map .right-map .form form .form-group input, body .map .right-map .form form .form-group select {
   min-width: 388px;
   max-width: 388px;
   max-height: 46px;
@@ -2033,17 +2059,17 @@ body .map .right-map form .form-group input {
   padding: 0 16px 0 16px;
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map form .form-group input {
+  body .map .right-map .form form .form-group input, body .map .right-map .form form .form-group select {
     min-width: 280px;
     max-width: 280px;
     box-sizing: border-box;
   }
 }
-body .map .right-map form .form-group input::placeholder {
+body .map .right-map .form form .form-group input::placeholder, body .map .right-map .form form .form-group select::placeholder {
   color: #B1B1B1;
   opacity: 0.4;
 }
-body .map .right-map form .form-group label {
+body .map .right-map .form form .form-group label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -2052,21 +2078,21 @@ body .map .right-map form .form-group label {
   color: rgba(18, 22, 33, 0.4);
   margin-bottom: 8px;
 }
-body .map .right-map form .form-group span {
+body .map .right-map .form form .form-group span {
   display: none;
 }
-body .map .right-map form .buttons2 {
+body .map .right-map .form form .buttons2 {
   width: 100%;
   max-height: 48px;
   margin-top: 16px;
   padding: 16px 16px;
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map form .buttons2 {
+  body .map .right-map .form form .buttons2 {
     min-width: 280px;
   }
 }
-body .map .right-map p {
+body .map .right-map .form p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -2078,7 +2104,7 @@ body .map .right-map p {
   min-width: 479px;
 }
 @media only screen and (max-width: 640px) {
-  body .map .right-map p {
+  body .map .right-map .form p {
     min-width: inherit;
     width: 100%;
   }
@@ -2089,6 +2115,11 @@ body footer {
   background-color: #F2F4F4;
   padding-top: 60px;
 }
+@media only screen and (max-width: 640px) {
+  body footer {
+    padding: 60px 0;
+  }
+}
 body footer .content-footer {
   display: flex;
   justify-content: space-between;
@@ -2097,14 +2128,29 @@ body footer .content-footer {
   min-height: 64px;
   border-bottom: 1px solid #B1B1B1;
 }
+@media only screen and (max-width: 640px) {
+  body footer .content-footer {
+    flex-direction: column;
+  }
+}
 body footer .content-footer .logo-footer {
   width: 171px;
   height: 55px;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 640px) {
+  body footer .content-footer .logo-footer {
+    margin-bottom: 50px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   body footer .content-footer .menu-footer {
     max-width: 511px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body footer .content-footer .menu-footer {
+    padding: 0 30px;
   }
 }
 body footer .content-footer .menu-footer ul {
@@ -2116,12 +2162,24 @@ body footer .content-footer .menu-footer ul {
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 640px) {
+  body footer .content-footer .menu-footer ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 body footer .content-footer .menu-footer ul li {
   margin-right: 57px;
 }
 @media only screen and (max-width: 1024px) {
   body footer .content-footer .menu-footer ul li {
     margin-right: 93px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body footer .content-footer .menu-footer ul li {
+    margin-right: 0px;
+    margin-bottom: 32px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -2136,6 +2194,12 @@ body footer .content-footer .menu-footer ul li a {
   font-size: 16px;
   line-height: 26px;
   color: #4A4A4A;
+}
+@media only screen and (max-width: 640px) {
+  body footer .content-footer .menu-footer ul li a {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 body footer .content-footer .menu-footer ul li a:hover {
   color: #E97522;
@@ -2153,6 +2217,12 @@ body footer .dawn-footer .content-dawn-footer {
   justify-content: flex-end;
   margin-top: 32px;
 }
+@media only screen and (max-width: 640px) {
+  body footer .dawn-footer .content-dawn-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body footer .dawn-footer .content-dawn-footer p {
   margin-right: 32px;
   display: flex;
@@ -2163,6 +2233,12 @@ body footer .dawn-footer .content-dawn-footer p {
   font-size: 16px;
   line-height: 28px;
   color: #333333;
+}
+@media only screen and (max-width: 640px) {
+  body footer .dawn-footer .content-dawn-footer p {
+    margin-right: inherit;
+    margin-bottom: 16px;
+  }
 }
 body footer .dawn-footer .content-dawn-footer .buttons button {
   border: none;
@@ -2201,6 +2277,534 @@ body footer .dawn-footer .content-dawn-footer .buttons button.telegram-button {
 }
 body footer .dawn-footer .content-dawn-footer .buttons button:hover {
   background-color: #E97522;
+}
+body .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .popup .main-container {
+  width: 622px;
+  height: 331px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 88px 83px;
+  box-sizing: border-box;
+  position: relative;
+}
+body .popup .main-container .close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -32px;
+  right: 0px;
+  background-image: url(../image/pop-up/close.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+body .popup .main-container h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #4A4A4A;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 1024px) {
+  body .popup .main-container h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .popup .main-container h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+body .popup .main-container p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A0A2A6;
+  text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  body .popup .main-container {
+    width: 337px;
+    padding: 98.5px 23.5px;
+  }
+}
+body .thank-form2 .main-container {
+  height: 271px;
+  padding: 92.5px 90px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 640px) {
+  body .thank-form2 .main-container {
+    height: 230px;
+    padding: 89px 33.5px;
+  }
+}
+body .form-connect.review .main-container {
+  flex-direction: row-reverse;
+  min-height: 662px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect.review .main-container {
+    min-height: 616px;
+    padding: 56px 3px 53px 45px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect.review .main-container {
+    flex-direction: column;
+    padding: 23px 29px 32px;
+  }
+}
+body .form-connect.review .main-container .left {
+  background-image: url("../image/pop-up/form-review.svg");
+  background-size: 399px;
+  background-position: center;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect.review .main-container .left {
+    background-size: 338px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect.review .main-container .left {
+    background-size: 118px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect.review .main-container .right .form h2 {
+    font-size: 22px;
+    white-space: inherit;
+    min-width: 308px;
+    min-height: 78px;
+    margin-top: 21px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect.review .main-container .right .form .form-section .buttons2 {
+    font-size: 14px;
+  }
+}
+body .form-connect.review .main-container .right .form .form-section .form-group textarea {
+  min-width: 420px;
+  max-height: 100px;
+  padding: 18px 16px;
+  resize: none;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect.review .main-container .right .form .form-section .form-group textarea {
+    min-width: 374px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect.review .main-container .right .form .form-section .form-group textarea {
+    min-width: 280px;
+    max-height: 80px;
+  }
+}
+body .form-connect.location .main-container {
+  height: 648px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect.location .main-container {
+    max-height: 565px;
+  }
+}
+body .form-connect.location .main-container .left {
+  background-image: url("../image/pop-up/form-location.svg");
+}
+body .form-connect .main-container {
+  min-height: 559px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0.88;
+  max-width: 551px;
+  max-height: 594px;
+  background-color: #F2F4F4;
+  padding: 84px 36px;
+  border-radius: 25px;
+  z-index: 2;
+  max-height: inherit;
+  max-width: 1033px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px 15px 50px 27px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container {
+    box-sizing: border-box;
+    max-width: 482px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container {
+    width: 90%;
+    height: 541px;
+    z-index: 1;
+    position: relative;
+    top: -38px;
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+}
+body .form-connect .main-container h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #4A4A4A;
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+}
+body .form-connect .main-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container form {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container form {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+body .form-connect .main-container form .form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container form .form-group {
+    margin-bottom: 10px;
+  }
+}
+body .form-connect .main-container form .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: 2px;
+  font-size: 12px;
+}
+body .form-connect .main-container form .form-group.form-group--error label {
+  color: #ff1744;
+}
+body .form-connect .main-container form .form-group.form-group--error input {
+  border: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .form-connect .main-container form .form-group input, body .form-connect .main-container form .form-group select, body .form-connect .main-container form .form-group textarea {
+  min-width: 420px;
+  max-width: 420px;
+  max-height: 46px;
+  min-height: 46px;
+  border-radius: 5px;
+  border: 1px solid #DDDEE4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 0 16px 0 16px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container form .form-group input, body .form-connect .main-container form .form-group select, body .form-connect .main-container form .form-group textarea {
+    min-width: 280px;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+}
+body .form-connect .main-container form .form-group input::placeholder, body .form-connect .main-container form .form-group select::placeholder, body .form-connect .main-container form .form-group textarea::placeholder {
+  color: #B1B1B1;
+  opacity: 0.4;
+}
+body .form-connect .main-container form .form-group label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: rgba(18, 22, 33, 0.4);
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container form .form-group label {
+    font-size: 14px;
+  }
+}
+body .form-connect .main-container form .form-group span {
+  display: none;
+}
+body .form-connect .main-container form .buttons2 {
+  width: 100%;
+  max-height: 48px;
+  margin-top: 16px;
+  padding: 16px 16px;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container form .buttons2 {
+    min-width: 280px;
+    font-size: 12px;
+  }
+}
+body .form-connect .main-container p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #585858;
+  margin-top: 16px;
+  min-width: 479px;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container p {
+    min-width: inherit;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container h2 {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container {
+    max-width: 840px;
+    padding: 50px 50px 43px 30px;
+    min-height: 509px;
+    max-height: 509px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container {
+    flex-direction: column;
+    min-height: 496px;
+    width: 35%;
+    padding: 18px 29px 32px;
+  }
+}
+body .form-connect .main-container .left {
+  width: 45%;
+  min-height: 411px;
+  background-image: url("../image/pop-up/form1.svg");
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container .left {
+    background-size: 328px;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container .left {
+    background-size: 110px;
+    min-height: 112px;
+  }
+}
+body .form-connect .main-container .right {
+  width: 55%;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container .right {
+    min-height: 323px;
+  }
+}
+body .form-connect .main-container .right .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container .right .form .form-section .buttons2 {
+    padding: 11.5px 50px;
+    margin-top: 0;
+    max-height: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container .right .form .form-section .form-group {
+    max-width: 375px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container .right .form .form-section .form-group input, body .form-connect .main-container .right .form .form-section .form-group select, body .form-connect .main-container .right .form .form-section .form-group textarea {
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 40px;
+    min-height: 40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container .right .form .form-section .form-group input, body .form-connect .main-container .right .form .form-section .form-group select, body .form-connect .main-container .right .form .form-section .form-group textarea {
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 32px;
+    min-height: 32px;
+  }
+}
+body .form-connect .main-container .right .form p {
+  max-width: 479px;
+}
+@media only screen and (max-width: 1024px) {
+  body .form-connect .main-container .right .form p {
+    max-width: 374px;
+    min-width: 375px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .form-connect .main-container .right .form p {
+    max-width: 304px;
+    min-width: 304px;
+  }
+}
+body .correct-photo .main-container {
+  width: 680px;
+  height: 307px;
+  padding: 42px 48.5px;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container {
+    width: 338px;
+    height: 254px;
+  }
+}
+body .correct-photo .main-container h3 {
+  white-space: nowrap;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container h3 {
+    font-size: 22px;
+    white-space: inherit;
+  }
+}
+body .correct-photo .main-container form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  body .correct-photo .main-container form {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container form {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+body .correct-photo .main-container form .form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container form .form-group {
+    margin-bottom: 10px;
+  }
+}
+body .correct-photo .main-container form .form-group input, body .correct-photo .main-container form .form-group select, body .correct-photo .main-container form .form-group textarea {
+  min-width: 420px;
+  max-width: 420px;
+  max-height: 46px;
+  min-height: 46px;
+  border-radius: 5px;
+  border: 1px solid #DDDEE4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 0 16px 0 16px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container form .form-group input, body .correct-photo .main-container form .form-group select, body .correct-photo .main-container form .form-group textarea {
+    min-width: 280px;
+    max-width: 280px;
+    height: 32px;
+    box-sizing: border-box;
+  }
+}
+body .correct-photo .main-container form .form-group input::placeholder, body .correct-photo .main-container form .form-group select::placeholder, body .correct-photo .main-container form .form-group textarea::placeholder {
+  color: #B1B1B1;
+  opacity: 0.4;
+}
+body .correct-photo .main-container form .form-group label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: rgba(18, 22, 33, 0.4);
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container form .form-group label {
+    font-size: 14px;
+  }
+}
+body .correct-photo .main-container form .form-group span {
+  display: none;
+}
+body .correct-photo .main-container form .buttons2 {
+  width: 100%;
+  max-width: 420px;
+  max-height: 48px;
+  margin-top: 16px;
+  padding: 16px 16px;
+}
+@media only screen and (max-width: 640px) {
+  body .correct-photo .main-container form .buttons2 {
+    min-width: 280px;
+    font-size: 12px;
+    height: 40px;
+    margin-top: 0;
+    padding: 11.5px 81.5px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

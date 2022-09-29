@@ -53,9 +53,6 @@ function slider(className, obj, place, mainSlideIndex) {
 }
 
 
-
-
-
 function slideRight() {
     slideIndex++;
     slider ('.our-location', '.images', 'our-location', slideIndex)
@@ -125,7 +122,7 @@ let myHtmlReview = '';
 for (let element of users) {
     let button = '';
     if (element.name === 'Сергей') {
-        button = `<button class="buttons2">Добавить отзыв</button>`
+        button = `<button class="buttons2" onclick="openPopUp('.review')">Добавить отзыв</button>`
     }
     myHtmlReview += `<div class="card-reviews">
                     <img src="image/reviews/${element.avatarImage}" alt="ffg">
@@ -166,6 +163,23 @@ menuBtn.addEventListener('click', function(){
     menu.classList.toggle('active');
     menuBtn.classList.toggle('active');
 })
+
+function openPopUp(className) {
+    document.querySelector(className).style = "display: flex";
+    document.body.style.overflow = "hidden"
+}
+
+function  closePopUp(className) {
+    document.querySelector(className).style = "display: none";
+    document.body.style.overflow = "auto"
+}
+
+function openAnotherPopup(close, open) {
+    closePopUp(close)
+    openPopUp(open)
+}
+
+
 
 
 

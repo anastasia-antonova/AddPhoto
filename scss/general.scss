@@ -55,6 +55,7 @@
   color: $white;
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
   cursor: pointer;
+  width: 100%;
 
   &:hover {
     background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
