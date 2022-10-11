@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>AddPhoto</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="scss/home.css">
 </head>
 <body>
@@ -32,6 +34,25 @@
             <button class="buttons1" onclick="callPhone('+7 (499) 344 60 91')">Обратный звонок</button>
             <a href="" class="p-text-header">+7 (499) 344 60 91</a>
         </div>
+        <img src="image/logo2.png" alt="logo" class="logo2">
+        <div class="burger-section">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">О фотостудии</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Виды работ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
 <section class="banner">
@@ -45,21 +66,21 @@
             Выбор правильной фотостудии занимает далеко не последнее место в получение фотографий. И мы с точностью
             заявляем, что нашей фотостудией вы останетесь довольны
             и еще не раз захотите возвращаться к нам. </p>
-        <button class="buttons2">Получить консультацию</button>
+        <button class="buttons2" onclick="openPopUp('.connect')">Получить консультацию</button>
     </div>
 </section>
 <section class="slader-our-work scroll-portfolio" id="box1">
     <h3 class="title-h3-margin">Наши работы</h3>
     <div class="slaider-group">
-        <button class="btn-icon left rotate">
+        <button class="btn-icon left rotate" onclick="slideLeftWork()">
             <i class="arrow"></i>
         </button>
         <div class="images">
-            <img src="image/our-works/pic2.jpg" alt="gh" class="active-left">
-            <img src="image/our-works/pic1.jpg" alt="gh" class="active">
-            <img src="image/our-works/pic3.jpg" alt="gh" class="active-right">
+            <img src="image/our-works/pic1.jpeg" alt="gh" class="active-left">
+            <img src="image/our-works/pic2.jpeg" alt="gh" class="active">
+            <img src="image/our-works/pic3.jpeg" alt="gh" class="active-right">
         </div>
-        <button class="btn-icon right">
+        <button class="btn-icon right" onclick="slideRightWork()">
             <i class="arrow"></i>
         </button>
         <div class="slider-bottom-controls">
@@ -75,19 +96,19 @@
     <div class="our-location-content basic">
         <h3 class="title-h3-margin">Наши локации</h3>
         <div class="slaider-group">
-            <button class="btn-icon left rotate">
+            <button class="btn-icon left rotate" onclick="slideLeft()">
                 <i class="arrow"></i>
             </button>
             <div class="images">
-                <img src="image/our-location/im1-our-lock.png" alt="gdh">
-                <img src="image/our-location/im2-our-lock.png" alt="ggh">
-                <img src="image/our-location/im3-our-lock.png" alt="gxh">
+                <img src="image/our-location/pic1.jpeg" alt="gdh">
+                <img src="image/our-location/pic2.jpeg" alt="ggh">
+                <img src="image/our-location/pic3.jpeg" alt="gxh">
             </div>
-            <button class="btn-icon right">
+            <button class="btn-icon right" onclick="slideRight()">
                 <i class="arrow"></i>
             </button>
         </div>
-        <button class="buttons2">выбрать локацию </button>
+        <button class="buttons2" onclick="openPopUp('.location')">выбрать локацию </button>
     </div>
 </section>
 <section class="video">
@@ -96,64 +117,42 @@
 </section>
 <section class="grid basic scroll-work-types">
     <h3 class="title-h3-margin">Виды услуг</h3>
-<div class="grid-box">
-    <div class="grid-body">
-        <div class="grid-item  grid-item-1">
-            <p>Фотосессия Лав Стори</p>
+    <div class="grid-box">
+        <div class="grid-body desktop">
+            <div class="grid-item  grid-item-1">
+                <p>Фотосессия Лав Стори</p>
+            </div>
+            <div class="grid-item row_span_2 grid-item-2"><p>Фотосессия для подростков</p></div>
+            <div class="grid-item grid-item-3"><p>Парная фотосессия</p></div>
+            <div class="grid-item grid-item-4"><p>Фотосессия для парней</p></div>
+            <div class="grid-item row_span_2 grid-item-5"><p>Семейная фотосессия (дети +14)</p></div>
+            <div class="grid-item row_span_2 grid-item-6"><p>Групповая фотосессия</p></div>
+            <div class="grid-item grid-item-7"><p>Фотосессия Лукбук</p></div>
+            <div class="grid-item column_span_2 grid-item-8"><p>Фотосессия для девушек</p></div>
+            <div class="grid-item grid-item-9"><p>Фотосессия для беременных</p></div>
+            <div class="grid-item grid-item-10"><p>Фотосессия с животными</p></div>
+            <div class="grid-item grid-item-11"><p>Фотосессия «Деловой стиль»</p></div>
         </div>
-        <div class="grid-item row_span_2 grid-item-2"><p>Фотосессия для подростков</p></div>
-        <div class="grid-item grid-item-3"><p>Парная фотосессия</p></div>
-        <div class="grid-item grid-item-4"><p>Фотосессия для парней</p></div>
-        <div class="grid-item row_span_2 grid-item-5"><p>Семейная фотосессия (дети +14)</p></div>
-        <div class="grid-item row_span_2 grid-item-6"><p>Групповая фотосессия</p></div>
-        <div class="grid-item grid-item-7"><p>Фотосессия Лукбук</p></div>
-        <div class="grid-item column_span_2 grid-item-8"><p>Фотосессия для девушек</p></div>
-        <div class="grid-item grid-item-9"><p>Фотосессия для беременных</p></div>
-        <div class="grid-item grid-item-10"><p>Фотосессия с животными</p></div>
-        <div class="grid-item grid-item-11"><p>Фотосессия «Деловой стиль»</p></div>
+        <div class="grid-body mobile">
+            <div class="grid-item  grid-item-1">
+                <p>Фотосессия Лав Стори</p>
+            </div>
+            <div class="grid-item row_span_2 grid-item-2"><p>Фотосессия для подростков</p></div>
+            <div class="grid-item grid-item-3"><p>Парная фотосессия</p></div>
+            <div class="grid-item row_span_2 grid-item-4"><p>Фотосессия для парней</p></div>
+            <div class="grid-item  grid-item-5"><p>Семейная фотосессия (дети +14)</p></div>
+            <div class="grid-item  grid-item-6"><p>Групповая фотосессия</p></div>
+            <div class="grid-item grid-item-7"><p>Фотосессия Лукбук</p></div>
+            <div class="grid-item row_span_2 grid-item-8"><p>Фотосессия для девушек</p></div>
+            <div class="grid-item grid-item-9"><p>Фотосессия для беременных</p></div>
+            <div class="grid-item grid-item-10"><p>Фотосессия с животными</p></div>
+            <div class="grid-item grid-item-11"><p>Фотосессия «Деловой стиль»</p></div>
+        </div>
     </div>
-</div>
 </section>
 <section class="stages basic">
     <h3 class="title-h3-margin">Этапы работ</h3>
-    <div class="content-stages">
-        <div class="box-stage">
-            <div class="box-text">
-                <p class="title-box-text">Заявка</p>
-                <p>Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягких. </p>
-            </div>
-
-        </div>
-        <div class="box-stage">
-            <div class="box-text">
-                <p class="title-box-text">Бронь</p>
-                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
-            </div>
-
-        </div>
-        <div class="box-stage">
-            <div class="box-text">
-                <p class="title-box-text">Съёмка</p>
-                <p>Съешь еще этих мягких <br>французских булок, да выпей <br>чаю. Съешь еще этих мягких. </p>
-            </div>
-
-        </div>
-        <div class="box-stage">
-            <div class="box-text">
-                <p class="title-box-text">Составление <br>
-                    Технического задания</p>
-                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
-            </div>
-
-        </div>
-        <div class="box-stage">
-            <div class="box-text">
-                <p class="title-box-text">Готовые фото</p>
-                <p>Съешь еще этих мягких <br>французских булок, да выпей <br> чаю. Съешь еще этих мягких. </p>
-            </div>
-
-        </div>
-    </div>
+    <div class="content-stages"></div>
 </section>
 <section class="text-block1 scroll-about-us" id="text-block1">
     <div class="basic">
@@ -236,7 +235,7 @@
                 <div class="additional-services">
                     <p>Помощь в позировании</p>
                     <p>Визажист + 2000 $</p>
-                    <p>Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
+                    <p onclick="openPopUp('.correct-photo')">Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
                 </div>
                 <button class="buttons2">Забронировать</button>
             </div>
@@ -261,7 +260,7 @@
                 <div class="additional-services">
                     <p>Помощь в позировании</p>
                     <p>Визажист + 2000 ₽</p>
-                    <p>Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
+                    <p onclick="openPopUp('.correct-photo')">Дополнительная ретушь  фото — 1 шт. / 250 ₽</p>
                 </div>
                 <button class="buttons2">Забронировать</button>
             </div>
@@ -285,7 +284,7 @@
                 </div>
                 <p>Дополнительные услуги</p>
                 <div class="additional-services">
-                    <p>Дополнительная ретушь <br> фото — 1 шт. / 250 ₽</p>
+                    <p onclick="openPopUp('.correct-photo')">Дополнительная ретушь <br> фото — 1 шт. / 250 ₽</p>
                 </div>
                 <button class="buttons2">Забронировать</button>
             </div>
@@ -366,7 +365,7 @@
         <div class="right-gift">
             <div class="buy-right-gift">
                 <p>Срок действия сертификата: 2 месяца со дня приобретения.</p>
-                <button class="buttons2">Приобрести</button>
+                <button class="buttons2" onclick="openPopUp('.connect')">Приобрести</button>
             </div>
         </div>
     </div>
@@ -377,36 +376,7 @@
         <button class="btn-icon left rotate">
             <i class="arrow"></i>
         </button>
-        <div class="card-reviews">
-            <img src="image/reviews/photo1.png" alt="ffg">
-            <div class="text-reviews">
-                <p class="name-review">Мария</p>
-                <p class="p-text">
-                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
-                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-                <a href="">Показать ещё</a>
-            </div>
-        </div>
-        <div class="card-reviews">
-            <img src="image/reviews/photo2.png"class="photo2-reviews" alt="ffg">
-            <div class="text-reviews">
-                <p class="name-review">Сергей</p>
-                <p class="p-text">
-                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
-                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-                <a href="">Показать ещё</a>
-            </div>
-            <button class="buttons2">Добавить отзыв</button>
-        </div>
-        <div class="card-reviews">
-            <img src="image/reviews/photo3.png" alt="ffg" class="photo3-reviews">
-            <div class="text-reviews">
-                <p class="name-review">Руслан</p>
-                <p class="p-text">
-                    Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок,
-                    да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-                <a href="">Показать ещё</a>
-            </div>
+        <div class="card-reviews-section">
         </div>
         <button class="btn-icon right">
             <i class="arrow"></i>
@@ -424,28 +394,32 @@
     </div>
 </div>
 <div class="right-map">
-    <h2>Форма обратной связи</h2>
-    <form action="">
+    <div class="form">
+        <h2>Форма обратной связи</h2>
+        <form action="" class="form-section">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+                <span class="required">Это поле обязательное</span>
+            </div>
 
-        <div class="form-group" >
-            <label for="name">Имя</label>
-            <input type="text" id="name" placeholder="Введите ваше имя">
-        </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Введите ваш E-mail">
+                <span class="required">Это поле обязательное</span>
+            </div>
 
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Введите ваш E-mail">
-        </div>
+            <div class="form-group">
+                <label for="number">Телефон</label>
+                <input type="text" id="number" placeholder="Введите ваш Телефон">
+                <span class="required">Это поле обязательное</span>
+                <span class="not-number">Вводить только числа</span>
+            </div>
 
-        <div class="form-group">
-            <label for="number">Телефон</label>
-            <input type="number" id="number" placeholder="Введите ваш Телефон"  required minlength="6" maxlength="11">
-        </div>
-
-        <button class="buttons2">Отправить</button>
-
-    </form>
-    <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+            <button class="buttons2" type="button" onclick="send()">Отправить</button>
+        </form>
+        <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+    </div>
 </div>
 </section>
 <footer>
@@ -461,7 +435,6 @@
                 <li><a href="">Контакты</a></li>
             </ul>
         </div>
-
     </div>
     <div class="dawn-footer basic">
         <div class="content-dawn-footer">
@@ -473,10 +446,172 @@
                 <button class="telegram-button"></button>
             </div>
         </div>
-
     </div>
 </footer>
-<!--<script src="js/script.js"></script>-->
+
+<div class="thank-form popup" style="display: none">
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.thank-form')"></button>
+        <h3>Благодарим
+            за оставленную заявку!</h3>
+        <p>Наши специалисты уже обрабатывают
+            Вашу заявку и свяжутся с Вами в ближайшее время</p>
+    </div>
+</div>
+
+<div class="thank-form2 popup" style="display: none">
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.thank-form2')"></button>
+        <h3>Благодарим
+            за оставленный отзыв!
+        </h3>
+    </div>
+</div>
+
+<div class="form-connect connect popup" style="display: none">
+
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.connect')" ></button>
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+                <h2>Форма обратной связи</h2>
+                <form action="" class="form-section">
+                    <div class="form-group">
+                        <label for="name1">Имя</label>
+                        <input type="text" id="name1" placeholder="Введите ваше имя">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email1">E-mail</label>
+                        <input type="email" id="email1" placeholder="Введите ваш E-mail">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Телефон</label>
+                        <input type="text" id="number1" placeholder="Введите ваш Телефон">
+                        <span class="required">Это поле обязательное</span>
+                        <span class="not-number">Вводить только числа</span>
+                    </div>
+
+                    <button class="buttons2" type="button" onclick="openAnotherPopup('.connect', '.thank-form')">Отправить</button>
+                </form>
+                <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-connect review popup" style="display: none">
+
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.review')"></button>
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+                <h2>Оставьте отзыв о том,
+                    как прошла ваша фотосессия</h2>
+
+                <form action="" class="form-section">
+
+                    <div class="form-group">
+                        <label for="name3">Имя</label>
+                        <input type="text" id="name3" placeholder="Введите ваше имя">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email3">E-mail</label>
+                        <input type="email" id="email3" placeholder="Введите ваш E-mail">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review">Отзыв</label>
+                        <textarea name="" id="review" cols="30" rows="10" placeholder="Введите ваш отзыв"></textarea>
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <button class="buttons2" type="button"  onclick="openAnotherPopup('.review', '.thank-form2')">Отправить</button>
+
+                </form>
+                <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-connect location popup" style="display: none">
+
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.location')"></button>
+        <div class="left"></div>
+        <div class="right">
+            <div class="form">
+                <h2>Форма обратной связи</h2>
+                <form action="" class="form-section">
+                    <div class="form-group">
+                        <label for="name2">Имя</label>
+                        <input type="text" id="name2" placeholder="Введите ваше имя">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email2">E-mail</label>
+                        <input type="email" id="email2" placeholder="Введите ваш E-mail">
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number2">Телефон</label>
+                        <input type="text" id="number2" placeholder="Введите ваш Телефон">
+                        <span class="required">Это поле обязательное</span>
+                        <span class="not-number">Вводить только числа</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="place">Выберете локацию</label>
+                        <select name="place" id="place">
+                            <option value="">локация1</option>
+                            <option value="">локация2</option>
+                            <option value="">локация3</option>
+                        </select>
+                        <span class="required">Это поле обязательное</span>
+                    </div>
+
+                    <button class="buttons2" type="button" onclick="openAnotherPopup('.location', '.thank-form2')">Отправить</button>
+                </form>
+                <p>Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="">с политикой конфиденциальности</a> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="correct-photo popup" style="display: none">
+
+    <div class="main-container">
+        <button class="close" onclick="closePopUp('.correct-photo')"></button>
+        <h3>Дополнительная ретушь фото</h3>
+        <div class="form">
+            <form action="" class="form-section">
+                <div class="form-group">
+                    <label for="name5">Количество</label>
+                    <input type="text" id="name5" placeholder="Введите количество фото для ретуши">
+                    <span class="required">Это поле обязательное</span>
+                </div>
+                <button class="buttons2" type="button">Сохранить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
 <script src="js/main.js"></script>
+
 </body>
+
 </html>

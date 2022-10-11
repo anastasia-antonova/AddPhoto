@@ -1,9 +1,19 @@
 @import "color";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400&display=swap');
+@import '_media';
 
 .basic {
   max-width: 1244px;
   margin: 0 auto;
+
+  @include media_tablet {
+    padding: 0 80px;
+  }
+
+  @include media_mobile {
+    padding: 0 16px;
+  }
+
 }
 
 .buttons1 {
@@ -45,6 +55,7 @@
   color: $white;
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
   cursor: pointer;
+  width: 100%;
 
   &:hover {
     background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
@@ -115,6 +126,11 @@
   text-align: center;
   margin-top: 120px;
   margin-bottom: 80px;
+
+  @include media_tablet {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .p-text-header {
@@ -153,6 +169,14 @@ a{
   -webkit-mask-size: 23px 47px;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
+
+
+  @include media_mobile {
+    -webkit-mask-size: 10px 19px;
+
+  }
+
+
 }
 
 .rotate {
@@ -168,6 +192,15 @@ a{
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   position: absolute;
+
+  @include media_tablet {
+    width: 64px;
+    height: 64px;
+  }
+  @include media_mobile {
+    width: 36px;
+    height: 36px;
+  }
 
   &:hover {
     background-color: $tango;

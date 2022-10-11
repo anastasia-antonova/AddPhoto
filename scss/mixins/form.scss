@@ -1,0 +1,166 @@
+
+
+@mixin form() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0.88;
+  max-width: 551px;
+  max-height: 594px;
+  background-color: $black_haze;
+  padding: 84px 36px;
+  border-radius: 25px;
+  z-index: 2;
+
+  @include media_tablet {
+    box-sizing: border-box;
+    max-width: 482px;
+  }
+  @include media_mobile {
+    width: 90%;
+    height: 541px;
+    z-index: 1;
+    position: relative;
+    top: -38px;
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+
+  h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: $tundora-black;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include media_mobile {
+      font-size: 22px;
+      margin-bottom: 40px;
+      white-space: nowrap;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+
+    @include media_tablet {
+      max-width: 380px;
+    }
+    @include media_mobile {
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+
+      @include media_mobile {
+        margin-bottom: 10px;
+      }
+
+      &.form-group--error {
+
+        span {
+          display: block;
+          font-family: "Montserrat";
+          color: #ff1744;
+          margin-top: 2px;
+          font-size: 12px;
+        }
+
+        label {
+          color: #ff1744;
+        }
+
+        input {
+          border: 1px solid #ff1744;
+          color: #ff1744;
+        }
+      }
+
+      input, select, textarea {
+        min-width: 420px;
+        max-width: 420px;
+        max-height: 46px;
+        min-height: 46px;
+        border-radius: 5px;
+        border: 1px solid #DDDEE4;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        padding: 0 16px 0 16px;
+        box-sizing: border-box;
+
+        @include media_mobile {
+          min-width: 280px;
+          max-width: 280px;
+          box-sizing: border-box;
+        }
+
+        &::placeholder {
+          color: #B1B1B1;
+          opacity: 0.4;
+        }
+      }
+      label {
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 12px;
+        color: rgba(18, 22, 33, 0.4);
+        margin-bottom: 8px;
+
+        @include media_mobile {
+          font-size: 14px;
+        }
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    .buttons2 {
+
+      width: 100%;
+      max-height: 48px;
+      margin-top: 16px;
+      padding: 16px 16px;
+
+      @include media_mobile {
+        min-width: 280px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: $scorpion;
+    margin-top: 16px;
+    min-width: 479px;
+
+    @include media_mobile {
+      min-width: inherit;
+      width: 100%;
+      margin-top: 12px;
+    }
+  }
+}
